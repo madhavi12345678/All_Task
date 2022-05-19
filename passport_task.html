@@ -1,0 +1,1873 @@
+<html>
+    <head>
+        <title>online Passport form</title>
+        <style>
+
+            #div1{
+                background-color: lightgoldenrodyellow;
+                font-family: sans-serif;
+                width: 80%;
+                margin-left: 10%;
+            }
+
+            p{
+                padding-left: 15%;
+                padding-right: 15%;
+            }
+            table{
+                font-size: 14px;
+            }
+
+            #first_col{
+               padding-left: 0px;
+            }
+
+            td,tr{
+                padding: 10px;
+            }
+
+        </style>
+
+        <script>
+            function check()
+            {
+
+            var radio1 = document.getElementById('radio-1');
+            var radio2 = document.getElementById('radio-2');
+           
+            if(radio1.checked == true)
+               {
+                document.getElementById('radio-3').disabled = true;
+                document.getElementById('radio-4').disabled = true;
+                document.getElementById('radio-5').disabled = true;
+                document.getElementById('radio-6').disabled = true;
+                document.getElementById('radio-7').disabled = true;
+                document.getElementById('radio-8').disabled = true;
+                document.getElementById('check-1').disabled = true;
+                document.getElementById('check-2').disabled = true;
+                document.getElementById('check-3').disabled = true;
+                document.getElementById('check-4').disabled = true;
+                document.getElementById('check-5').disabled = true;
+                document.getElementById('check-6').disabled = true;
+                document.getElementById('check-7').disabled = true;
+                document.getElementById('check-8').disabled = true;
+                document.getElementById('check-9').disabled = true;
+                document.getElementById('field_1_3').disabled = true;
+                document.getElementById('field_6_1_1').disabled = true;
+                document.getElementById('field_6_1_2').disabled = true;
+                document.getElementById('field_6_1_3').disabled = true;
+                document.getElementById('field_6_1_4').disabled = true;
+                document.getElementById('field_6_2_1').disabled = true;
+                document.getElementById('field_6_2_2').disabled = true;
+                document.getElementById('field_6_2_3').disabled = true;
+                document.getElementById('radio-52').disabled = true;
+                document.getElementById('radio-53').disabled = true;
+               }
+               if(radio2.checked == true){
+                document.getElementById('radio-3').disabled = false;
+                document.getElementById('radio-4').disabled = false;
+                document.getElementById('radio-5').disabled = false;
+                document.getElementById('radio-6').disabled = false;
+                document.getElementById('radio-7').disabled = false;
+                document.getElementById('radio-8').disabled = false;
+                document.getElementById('check-1').disabled = true;
+                document.getElementById('check-2').disabled = true;
+                document.getElementById('check-3').disabled = true;
+                document.getElementById('check-4').disabled = true;
+                document.getElementById('check-5').disabled = true;
+                document.getElementById('check-6').disabled = true;
+                document.getElementById('check-7').disabled = true;
+                document.getElementById('check-8').disabled = true;
+                document.getElementById('check-9').disabled = true;
+                document.getElementById('field_1_3').disabled = true;
+                document.getElementById('field_6_1_1').disabled = false;
+                document.getElementById('field_6_1_2').disabled = false;
+                document.getElementById('field_6_1_3').disabled = false;
+                document.getElementById('field_6_1_4').disabled = false;
+                document.getElementById('field_6_2_1').disabled = false;
+                document.getElementById('field_6_2_2').disabled = false;
+                document.getElementById('field_6_2_3').disabled = false;
+                document.getElementById('radio-52').disabled = false;
+                document.getElementById('radio-53').disabled = false;
+
+                if(document.getElementById('radio-7').checked == true)
+                {
+                document.getElementById('check-1').disabled = false;
+                document.getElementById('check-2').disabled = false;
+                document.getElementById('check-3').disabled = false;
+                document.getElementById('check-4').disabled = false;
+                document.getElementById('check-5').disabled = false;
+                document.getElementById('check-6').disabled = false;
+                document.getElementById('check-7').disabled = false;
+                document.getElementById('check-8').disabled = false;
+                document.getElementById('check-9').disabled = false;
+                document.getElementById('field_1_3').disabled = true;
+
+                if(document.getElementById('check-9').checked)
+                {
+                    document.getElementById('field_1_3').disabled = false;
+                }
+                else{
+                    document.getElementById('field_1_3').disabled = true;
+                }
+                }
+                else{
+                document.getElementById('check-1').disabled = true;
+                document.getElementById('check-2').disabled = true;
+                document.getElementById('check-3').disabled = true;
+                document.getElementById('check-4').disabled = true;
+                document.getElementById('check-5').disabled = true;
+                document.getElementById('check-6').disabled = true;
+                document.getElementById('check-7').disabled = true;
+                document.getElementById('check-8').disabled = true;
+                document.getElementById('check-9').disabled = true;
+                document.getElementById('field_1_3').disabled = true;
+                }
+
+                if(document.getElementById('radio-52').checked == true)
+                {
+                document.getElementById('field_6_2_1').disabled = false;
+                document.getElementById('field_6_2_2').disabled = false;
+                document.getElementById('field_6_2_3').disabled = false;
+                }
+                if(document.getElementById('radio-53').checked == true)
+                {
+                document.getElementById('field_6_2_1').disabled = true;
+                document.getElementById('field_6_2_2').disabled = true;
+                document.getElementById('field_6_2_3').disabled = true;
+                }
+               }
+
+            if(document.getElementById('radio-31').checked == true)
+            {
+                document.getElementById('field_2_12').disabled = false;
+            }  
+            else if(document.getElementById('radio-32').checked == true)
+            {
+                document.getElementById('field_2_12').disabled = false;
+            } 
+            else if(document.getElementById('radio-30').checked == true)
+            {
+                document.getElementById('field_2_12').disabled = false;
+            } 
+            else{
+                document.getElementById('field_2_12').disabled = true;
+            }
+
+            if(document.getElementById('radio-india').checked == true)
+            {
+                document.getElementById('field_2_5').disabled = false;
+                document.getElementById('field_2_5_1').disabled = false;
+                document.getElementById('field_2_5_2').disabled = false;
+                document.getElementById('field_2_5_3').disabled = true;
+            }
+            if(document.getElementById('radio-outside').checked == true){
+                document.getElementById('field_2_5').disabled = true;
+                document.getElementById('field_2_5_1').disabled = true;
+                document.getElementById('field_2_5_2').disabled = true;
+                document.getElementById('field_2_5_3').disabled = false;
+            }
+
+            if(document.getElementById('radio-50').checked == true)
+            {
+                document.getElementById('field_5_1').disabled = true;
+                document.getElementById('field_5_2').disabled = true;
+                document.getElementById('field_5_3').disabled = true;
+                document.getElementById('field_5_4').disabled = true;
+            }
+            if(document.getElementById('radio-51').checked == true)
+            {
+                document.getElementById('field_5_1').disabled = false;
+                document.getElementById('field_5_2').disabled = false;
+                document.getElementById('field_5_3').disabled = false;
+                document.getElementById('field_5_4').disabled = false;
+            }
+
+            }
+
+               
+            function validation(){
+               var is_valid = false;
+               var a_field = document.getElementById('a_field').value;
+               var box_1 = document.getElementById('box_1').value;
+               var box_2 = document.getElementById('box_2').value;
+               var radio1 = document.getElementById('radio-1').value;
+               var radio2 = document.getElementById('radio-2').value;
+               var field_1_3 = document.getElementById('field_1_3').value;
+               var field_2_1 = document.getElementById('field_2_1').value;
+               var field_2_1_1 = document.getElementById('field_2_1_1').value;
+               var field_2_4 = document.getElementById('field_2_4').value;
+               var field_2_5 = document.getElementById('field_2_5').value;
+               var field_2_5_1 = document.getElementById('field_2_5_1').value;
+               var field_2_5_2 = document.getElementById('field_2_5_2').value;
+               var field_2_5_3 = document.getElementById('field_2_5_3').value;
+               var field_2_9 = document.getElementById('field_2_9').value;
+               var field_2_10 = document.getElementById('field_2_10').value;
+               var field_2_12 = document.getElementById('field_2_12').value;
+               var field_2_16 = document.getElementById('field_2_16').value;
+               var field_2_17 = document.getElementById('field_2_17').value;
+               var field_3_1 = document.getElementById('field_3_1').value;
+               var field_3_1_1 = document.getElementById('field_3_1_1').value;
+               var field_3_2 = document.getElementById('field_3_2').value;
+               var field_3_2_1 = document.getElementById('field_3_2_1').value;
+               var field_3_3 = document.getElementById('field_3_3').value;
+               var field_3_3_1 = document.getElementById('field_3_3_1').value;
+               var field_3_4 = document.getElementById('field_3_4').value;
+               var field_3_4_1 = document.getElementById('field_3_4_1').value;
+               var field_3_5_1 = document.getElementById('field_3_5_1').value;
+               var field_3_5_2 = document.getElementById('field_3_5_2').value;
+               var field_3_5_3 = document.getElementById('field_3_5_3').value;
+               var field_3_5_4 = document.getElementById('field_3_5_4').value;
+               var field_4_1_1 = document.getElementById('field_4_1_1').value;
+               var field_4_1_2 = document.getElementById('field_4_1_2').value;
+               var field_4_1_3 = document.getElementById('field_4_1_3').value;
+               var field_4_1_4 = document.getElementById('field_4_1_4').value;
+               var field_4_1_5 = document.getElementById('field_4_1_5').value;
+               var field_4_1_6 = document.getElementById('field_4_1_6').value;
+               var field_4_1_7 = document.getElementById('field_4_1_7').value;
+               var field_4_1_8 = document.getElementById('field_4_1_8').value;
+               var field_4_1_9 = document.getElementById('field_4_1_9').value;
+               var field_5_1 = document.getElementById('field_5_1').value;
+               var field_5_2 = document.getElementById('field_5_2').value;
+               var field_5_3 = document.getElementById('field_5_3').value;
+               var field_5_4 = document.getElementById('field_5_4').value;
+               var field_6_1_1 = document.getElementById('field_6_1_1').value;
+               var field_6_1_2_date = document.getElementById('field_6_1_2').value;
+               var field_6_1_3_date = document.getElementById('field_6_1_3').value;
+               var field_6_1_2 = new Date( document.getElementById('field_6_1_2').value);
+               var field_6_1_3 = new Date( document.getElementById('field_6_1_3').value);
+               var field_6_1_4 = document.getElementById('field_6_1_4').value;
+               var field_6_2_1 = document.getElementById('field_6_2_1').value;
+               var field_6_2_2 = document.getElementById('field_6_2_2').value;
+               var field_6_2_3 = document.getElementById('field_6_2_3').value;
+               var field_8_1 = document.getElementById('field_8_1').value;
+               var field_8_2_1 = document.getElementById('field_8_2_1').value;
+               var field_8_2_2_date = document.getElementById('field_8_2_2').value;
+               var field_8_2_3_date = document.getElementById('field_8_2_3').value;
+               var field_8_2_2 = new Date( document.getElementById('field_8_2_2').value);
+               var field_8_2_3 = new Date( document.getElementById('field_8_2_3').value);
+               var field_8_2_4 = document.getElementById('field_8_2_4').value;
+               var field_8_2_5 = document.getElementById('field_8_2_5').value;
+               var field_10_1 = document.getElementById('field_10_1').value;
+               var field_10_2 = document.getElementById('field_10_2').value;
+               var field_10_3 = document.getElementById('field_10_3').value;
+               var radio_30 = document.getElementById('radio-30');
+               var radio_31 = document.getElementById('radio-31');
+               var radio_32 = document.getElementById('radio-32');
+               
+                
+               if(document.querySelector('input[name="p"]:checked') == null){
+                    document.getElementById('1.1 radio').innerHTML="1.1  please choose any one option for applying";
+                    is_valid=false;}
+               else{document.getElementById('1.1 radio').innerHTML="";
+                    if(document.getElementById('radio-2').checked == true){
+
+                            if(field_6_1_1 == ""){
+                            document.getElementById('6.1_passport').innerHTML="6.1  please enter passport number , field can't be Empty";
+                            is_valid=false;}
+                            else if(field_6_1_1.length < 8 || field_6_1_1.length > 8){
+                            document.getElementById('6.1_passport').innerHTML="6.1  passport number : please Enter 8 digit number only";
+                            is_valid=false;}
+                            else if (!field_6_1_1.match(/^[0-9A-Za-z]*$/)) {
+				            document.getElementById('6.1_passport').innerHTML = "6.1  passport number : special characters are not allow";
+				            is_valid = false;}
+                            else if (!field_6_1_1.match(/^[0-9A-Z]*$/)) {
+				            document.getElementById('6.1_passport').innerHTML = "6.1  passport number : allow capital latters only";
+				            is_valid = false;}
+                            else if (field_6_1_1.match(/^[0-9]*$/)) {
+				            document.getElementById('6.1_passport').innerHTML = "6.1  passport number : only numericals are not allow";
+				            is_valid = false;}
+                            else if (field_6_1_1.match(/^[A-Z]*$/)) {
+				            document.getElementById('6.1_passport').innerHTML = "6.1  passport number : only alphabets are not allow";
+				            is_valid = false;}
+                            else{document.getElementById('6.1_passport').innerHTML="";}
+
+
+                            if(field_6_1_2_date == ""){
+                            document.getElementById('6.1_issue-date').innerHTML="6.1  please enter date of issue";
+                            is_valid=false;}
+                            else if(field_6_1_2 > Date.now()){
+                            document.getElementById('6.1_issue-date').innerHTML="6.1  issue date must be less than current date";
+                            is_valid=false;} 
+                            else{document.getElementById('6.1_issue-date').innerHTML="";}
+
+
+                            if(field_6_1_3_date == ""){
+                            document.getElementById('6.1_expiry-date').innerHTML="6.1  please enter date of expiry";
+                            is_valid=false;}
+                            else if(field_6_1_3 < field_6_1_2){
+                            document.getElementById('6.1_expiry-date').innerHTML="6.1  expiry date must be greater than issue date";
+                            is_valid=false;}
+                            else{document.getElementById('6.1_expiry-date').innerHTML="";}
+
+
+                            if(field_6_1_4 == ""){
+                            document.getElementById('6.1_place').innerHTML="6.1  please enter place of birth , field can't be Empty";
+                            is_valid=false;}
+                            else if (!field_6_1_4.match(/^[0-9A-Za-z]*$/)) {
+				            document.getElementById('6.1_place').innerHTML = "6.1  place of birth : special characters are not allow";
+				            is_valid = false;}
+                            else if (!field_6_1_4.match(/^[A-Za-z]*$/)) {
+				            document.getElementById('6.1_place').innerHTML = "6.1  place of birth : please enter alphabetic latters only";
+				            is_valid = false;}
+                            else{document.getElementById('6.1_place').innerHTML="";}
+
+
+                            if(document.querySelector('input[name="answer"]:checked') == null){
+                                document.getElementById('6.2 radio').innerHTML="6.2  Have you ever applied for passport, but not issued? select yes or no.";
+                                is_valid=false;}
+                            else{document.getElementById('6.2 radio').innerHTML="";
+                                if(document.getElementById('radio-52').checked == true){
+                                    if(field_6_2_1 == ""){
+                                    document.getElementById('6.2_file-no').innerHTML="6.2  please enter file number , field can't be empty";
+                                    is_valid=false;}
+                                    else if(field_6_2_1.length < 12 || field_6_2_1.length > 12){
+                                    document.getElementById('6.2_file-no').innerHTML="6.2 file number: please Enter 12 digit number only";
+                                    is_valid=false;}
+                                    else if (!field_6_2_1.match(/^[0-9A-Za-z]*$/)) {
+				                    document.getElementById('6.2_file-no').innerHTML = "6.2 file number: special characters are not allowing";
+				                    is_valid = false;}
+                                    else if (!field_6_2_1.match(/^[0-9A-Z]*$/)) {
+				                    document.getElementById('6.2_file-no').innerHTML = "6.2 file number: allow capital latters only";
+				                    is_valid = false;}
+                                    else if (!field_6_2_1.match(/[A-Z][A-Z][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9]/)) {
+				                    document.getElementById('6.2_file-no').innerHTML = "6.2 file number: first two digits must be starting from alphabet letters only";
+				                    is_valid = false;}
+                                    else{document.getElementById('6.2_file-no').innerHTML="";}
+
+
+                                    if(field_6_2_2 == ""){
+                                    document.getElementById('6.2_month').innerHTML="6.2  please select month and year of applying";
+                                    is_valid=false;}
+                                    else{document.getElementById('6.2_month').innerHTML="";}
+
+
+                                    if(field_6_2_3 == ""){
+                                    document.getElementById('6.2_name').innerHTML="6.2  please enter name , field can't be empty";
+                                    is_valid=false;}
+                                    else if (!field_6_2_3.match(/^[0-9A-Za-z\s]*$/)) {
+				                    document.getElementById('6.2_name').innerHTML = "6.2  name : special characters are not allow";
+				                    is_valid = false;}
+                                    else if (!field_6_2_3.match(/^[A-Za-z\s]*$/)) {
+				                    document.getElementById('6.2_name').innerHTML = "6.2  name : please enter alphabetic latters only";
+				                    is_valid = false;}
+                                    else{document.getElementById('6.2_name').innerHTML="";}
+                        
+                                    is_valid=false;}
+                                else{document.getElementById('6.2_file-no').innerHTML="";
+                                    document.getElementById('6.2_month').innerHTML="";
+                                    document.getElementById('6.2_name').innerHTML="";}}
+
+                        if(document.querySelector('input[name="q"]:checked') == null){
+                            document.getElementById('1.2 radio').innerHTML="1.2  if re-issue of passport , please select any one option";
+                            is_valid=false;}
+                        else{document.getElementById('1.2 radio').innerHTML="";
+
+                            if(document.getElementById('radio-7').checked == true){
+                                if(document.querySelector('input[name="cc--"]:checked') == null){
+                                    document.getElementById('1.3 checkbox--').innerHTML="1.3 if Change in Existing Personal Particulars , please specify atleast one reason";
+                                    is_valid=false;}
+                                else{document.getElementById('1.3 checkbox--').innerHTML="";
+                                    if(document.getElementById('check-9').checked == true){
+                                        if(field_1_3 == ""){
+                                        document.getElementById('1.3_reason_box').innerHTML="1.3  If you select others , please specify the reason ";
+                                        is_valid=false;}
+                                        else if (!field_1_3.match(/^[0-9A-Za-z\s]*$/)) {
+				                        document.getElementById('1.3_reason_box').innerHTML = "1.3 reason : special characters are not allowed";
+				                        is_valid = false;}
+                                        else if (!field_1_3.match(/^[A-Za-z\s]*$/)) {
+				                        document.getElementById('1.3_reason_box').innerHTML = "1.3 reason : numerics are not allow. applicant name should contain alphabetic latters only";
+				                        is_valid = false;}
+                                        else{document.getElementById('1.3_reason_box').innerHTML="";}
+                                    is_valid=false;}
+                                    else{document.getElementById('1.3_reason_box').innerHTML="";}}
+                            is_valid=false;}
+                            else{document.getElementById('1.3 checkbox--').innerHTML="";}
+                            }
+                    is_valid=false;}
+                    else{document.getElementById('1.2 radio').innerHTML="";}}
+
+
+                if(document.querySelector('input[name="o"]:checked') == null){
+                    document.getElementById('1.4 radio').innerHTML="1.4  please select type of application";
+                    is_valid=false;}
+                else{document.getElementById('1.4 radio').innerHTML="";}
+
+
+                if(document.querySelector('input[name="nn"]:checked') == null){
+                    document.getElementById('1.5 radio').innerHTML="1.5  please select Type of Passport Booklet";
+                    is_valid=false;}
+                else{document.getElementById('1.5 radio').innerHTML="";}
+
+
+                if(document.querySelector('input[name="mm"]:checked') == null){
+                    document.getElementById('1.6 radio').innerHTML="1.6  please select validity required";
+                    is_valid=false;}
+                else{document.getElementById('1.6 radio').innerHTML="";}
+
+                
+                if(document.querySelector('input[name="kk"]:checked') == null){
+                    document.getElementById('2.2 radio').innerHTML="2.2  Are you known by any other names ? select yes or no";
+                    is_valid=false;}
+                else{document.getElementById('2.2 radio').innerHTML="";}
+
+
+                if(document.querySelector('input[name="ll"]:checked') == null){
+                    document.getElementById('2.3 radio').innerHTML="2.3  Have you ever changed your name ? select yes or no";
+                    is_valid=false;}
+                else{document.getElementById('2.3 radio').innerHTML="";}
+
+
+                if(document.querySelector('input[name="hh"]:checked') == null){
+                    document.getElementById('2.6 radio').innerHTML="2.6  please select gender";
+                    is_valid=false;}
+                else{document.getElementById('2.6 radio').innerHTML="";}
+
+
+                if(document.querySelector('input[name="ff"]:checked') == null){
+                    document.getElementById('2.7 radio').innerHTML="2.7  please select marital status";
+                    is_valid=false;}
+                else{document.getElementById('2.7 radio').innerHTML="";}
+
+
+                if(document.querySelector('input[name="gg"]:checked') == null){
+                    document.getElementById('2.8 radio').innerHTML="2.8  please select Citizenship of India";
+                    is_valid=false;}
+                else{document.getElementById('2.8 radio').innerHTML="";}
+
+
+                if(document.querySelector('input[name="bb"]:checked') == null){
+                    document.getElementById('2.13 radio').innerHTML="2.13  Is either of your parent (in case of minor)/ spouse, a government servant ? select yes or no";
+                    is_valid=false;}
+                else{document.getElementById('2.13 radio').innerHTML="";}
+
+
+                if(document.querySelector('input[name="cc"]:checked') == null){
+                    document.getElementById('2.14 radio').innerHTML="2.14  choose your Educational Qualification";
+                    is_valid=false;}
+                else{document.getElementById('2.14 radio').innerHTML="";}
+
+
+                if(document.querySelector('input[name="aa"]:checked') == null){
+                    document.getElementById('2.15 radio').innerHTML="2.15  Are you eligible for Non-ECR category? select yes or no.";
+                    is_valid=false;}
+                else{document.getElementById('2.15 radio').innerHTML="";}
+
+
+                if(document.querySelector('input[name="1"]:checked') == null){
+                    document.getElementById('7.1.1 radio').innerHTML="7.1.1 select yes or no.";
+                    is_valid=false;}
+                else{document.getElementById('7.1.1 radio').innerHTML="";}
+
+
+                if(document.querySelector('input[name="2"]:checked') == null){
+                    document.getElementById('7.1.2 radio').innerHTML="7.1.2 select yes or no.";
+                    is_valid=false;}
+                else{document.getElementById('7.1.2 radio').innerHTML="";}
+
+
+                if(document.querySelector('input[name="3"]:checked') == null){
+                    document.getElementById('7.1.3 radio').innerHTML="7.1.3 select yes or no.";
+                    is_valid=false;}
+                else{document.getElementById('7.1.3 radio').innerHTML="";}
+
+
+                if(document.querySelector('input[name="4"]:checked') == null){
+                    document.getElementById('7.1.4 radio').innerHTML="7.1.4 select yes or no.";
+                    is_valid=false;}
+                else{document.getElementById('7.1.4 radio').innerHTML="";}
+
+
+                if(document.querySelector('input[name="5"]:checked') == null){
+                    document.getElementById('7.2.1 radio').innerHTML="7.2.1 select yes or no.";
+                    is_valid=false;}
+                else{document.getElementById('7.2.1 radio').innerHTML="";}
+
+
+                if(document.querySelector('input[name="6"]:checked') == null){
+                    document.getElementById('7.3.1 radio').innerHTML="7.3.1 select yes or no.";
+                    is_valid=false;}
+                else{document.getElementById('7.3.1 radio').innerHTML="";}
+
+
+                if(document.querySelector('input[name="7"]:checked') == null){
+                    document.getElementById('7.3.2 radio').innerHTML="7.3.2 select yes or no.";
+                    is_valid=false;}
+                else{document.getElementById('7.3.2 radio').innerHTML="";}
+                
+                
+                if(document.querySelector('input[name="8"]:checked') == null){
+                    document.getElementById('7.3.3 radio').innerHTML="7.3.3 select yes or no.";
+                    is_valid=false;}
+                else{document.getElementById('7.3.3 radio').innerHTML="";}
+
+
+                if(a_field==""){
+                    document.getElementById('file_field').innerHTML="File number can't be Empty";
+                    is_valid=false; }
+                else if(a_field.length < 12){
+                    document.getElementById('file_field').innerHTML="file number  : please Enter 12 digit number only";
+                    is_valid=false;}
+                else if (!a_field.match(/^[0-9A-Za-z]*$/)) {
+				    document.getElementById('file_field').innerHTML = "file number  : special characters are not allowing";
+				    is_valid = false;}
+                else if (!a_field.match(/^[0-9A-Z]*$/)) {
+				    document.getElementById('file_field').innerHTML = "file number  : allow capital latters only";
+				    is_valid = false;}
+                else if (!a_field.match(/[A-Z][A-Z][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9]/)) {
+				    document.getElementById('file_field').innerHTML = "file number  : first two digits must be starting from alphabet letters only";
+				    is_valid = false;}
+                else if (!a_field.match(/[A-Z][A-Z][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][A-Z0-9][2][2]/)) {
+				    document.getElementById('file_field').innerHTML = "file number  : last two digits must be same as issue date";
+				    is_valid = false;}
+                else{document.getElementById('file_field').innerHTML="";}
+
+
+                if(box_1 == ""){
+                    document.getElementById('photo_box').innerHTML="please select your photo";
+                    is_valid=false;}
+                else{document.getElementById('photo_box').innerHTML=""; }
+
+
+                if(box_2 == ""){
+                    document.getElementById('signature_box').innerHTML="1.3  please select photo of signature";
+                    is_valid=false; }
+                else{document.getElementById('signature_box').innerHTML="";}
+
+
+                if(field_2_1 == ""){
+                    document.getElementById('2.1_name').innerHTML="2.1  applicant name : field can't be Empty";
+                    is_valid=false; }
+                else if (!field_2_1.match(/^[0-9A-Za-z\s]*$/)) {
+				    document.getElementById('2.1_name').innerHTML = "2.1  applicant name : special characters are not allowed";
+				    is_valid = false;}
+                else if (!field_2_1.match(/^[A-Za-z\s]*$/)) {
+				    document.getElementById('2.1_name').innerHTML = "2.1  applicant name : numerics are not allow. applicant name should contain alphabetic latters only";
+				    is_valid = false;}
+                else{document.getElementById('2.1_name').innerHTML="";}
+
+
+                if(field_2_1_1 == ""){
+                    document.getElementById('2.1_surname').innerHTML="2.1  surname , field can't be Empty";
+                    is_valid=false;}
+                else if (!field_2_1_1.match(/^[0-9A-Za-z\s]*$/)) {
+				    document.getElementById('2.1_surname').innerHTML = "2.1  surname : special characters are not allowed";
+				    is_valid = false;}
+                else if (!field_2_1_1.match(/^[A-Za-z\s]*$/)) {
+				    document.getElementById('2.1_surname').innerHTML = "2.1  surname : numerics are not allow. applicant name should contain alphabetic latters only";
+				    is_valid = false;}
+                else{document.getElementById('2.1_surname').innerHTML="";}
+              
+
+                if(field_2_4 == ""){
+                    document.getElementById('2.4_date').innerHTML="2.4  please enter Date of birth";
+                    is_valid=false;}
+                else{document.getElementById('2.4_date').innerHTML="";}
+
+
+                if(document.querySelector('input[name="hh--"]:checked') == null){
+                    document.getElementById('2.5 radio').innerHTML="2.5  please select place of birth";
+                    is_valid=false;}
+                else{document.getElementById('2.5 radio').innerHTML="";
+
+                if(document.getElementById('radio-india').checked == true){
+                    if(field_2_5 == ""){
+                    document.getElementById('2.5_place').innerHTML="2.5  please enter place of birth (Village or Town or City)";
+                    is_valid=false;}
+                    else if (!field_2_5.match(/^[0-9A-Za-z]*$/)) {
+				    document.getElementById('2.5_place').innerHTML = "2.5  birth place : special characters are not allowed";
+				    is_valid = false;}
+                    else if (!field_2_5.match(/^[A-Za-z]*$/)) {
+				    document.getElementById('2.5_place').innerHTML = "2.5  birth place : numerics are not allow. applicant name should contain alphabetic latters only";
+				    is_valid = false;}
+                    else{
+                    if(field_2_5_1 == field_2_5){
+                    document.getElementById('2.5_same-name').innerHTML="2.5  village & district name must be diffrent"
+                    is_valid=false;}
+                    else if(field_2_5_2 == field_2_5){
+                    document.getElementById('2.5_same-name').innerHTML="2.5  village & state name must be diffrent"
+                    is_valid=false;}
+                    else{document.getElementById('2.5_same-name').innerHTML="";}
+                    document.getElementById('2.5_place').innerHTML="";}
+
+
+                    if(field_2_5_1 == ""){
+                    document.getElementById('2.5_district').innerHTML="2.5  please enter District (India)";
+                    is_valid=false;}
+                    else if (!field_2_5_1.match(/^[0-9A-Za-z]*$/)) {
+				    document.getElementById('2.5_district').innerHTML = "2.5  District : special characters are not allowed";
+				    is_valid = false;}
+                    else if (!field_2_5_1.match(/^[A-Za-z]*$/)) {
+				    document.getElementById('2.5_district').innerHTML = "2.5  District : numerics are not allow. applicant name should contain alphabetic latters only";
+				    is_valid = false;}
+                    else{
+                    if(field_2_5_1 == field_2_5_2){
+                    document.getElementById('2.5_same-name').innerHTML="2.5  district & state name must be diffrent"
+                    is_valid=false;}
+                    else if(field_2_5_1 == field_2_5){
+                    document.getElementById('2.5_same-name').innerHTML="2.5  district & village name must be diffrent"
+                    is_valid=false;}
+                    else{document.getElementById('2.5_same-name').innerHTML="";}
+                     document.getElementById('2.5_district').innerHTML="";}
+
+
+                    if(field_2_5_2 == ""){
+                    document.getElementById('2.5_state').innerHTML="2.5  please enter state (india)";
+                    is_valid=false;}
+                    else if (!field_2_5_2.match(/^[0-9A-Za-z]*$/)) {
+				    document.getElementById('2.5_state').innerHTML = "2.5  state : special characters are not allowed";
+				    is_valid = false;}
+                    else if (!field_2_5_2.match(/^[A-Za-z]*$/)) {
+				    document.getElementById('2.5_state').innerHTML = "2.5  state : numerics are not allow. applicant name should contain alphabetic latters only";
+				    is_valid = false;}
+                    else{
+                    if(field_2_5_1 == field_2_5_2){
+                    document.getElementById('2.5_same-name').innerHTML="2.5  district & state name must be diffrent"
+                    is_valid=false;}
+                    else if(field_2_5_2 == field_2_5){
+                    document.getElementById('2.5_same-name').innerHTML="2.5  state & village name must be diffrent"
+                    is_valid=false;}
+                    else{document.getElementById('2.5_same-name').innerHTML="";}
+                    document.getElementById('2.5_state').innerHTML="";}
+
+
+                    if(!field_2_5_1 == ""){
+                    if(field_2_5_1 == field_2_5 && field_2_5_2 == field_2_5 && field_2_5_1 == field_2_5_2){
+                    document.getElementById('2.5_same-name--').innerHTML="2.5  village , district & state name must be diffrent"
+                    is_valid=false;}
+                    else{document.getElementById('2.5_same-name--').innerHTML="";}
+                    is_valid=false;}
+                    else{document.getElementById('2.5_same-name--').innerHTML="";}}
+
+                else{
+                    document.getElementById('2.5_district').innerHTML="";
+                    document.getElementById('2.5_place').innerHTML="";
+                    document.getElementById('2.5_same-name--').innerHTML="";
+                    document.getElementById('2.5_state').innerHTML="";}
+
+                if(document.getElementById('radio-outside').checked == true){
+                    if(field_2_5_3 == ""){
+                    document.getElementById('2.5_country').innerHTML="2.5  please enter country (if born in USA)";
+                    is_valid=false;}
+                    else if (!field_2_5_3.match(/^[0-9A-Za-z]*$/)) {
+				    document.getElementById('2.5_country').innerHTML = "2.5  country : special characters are not allowed";
+				    is_valid = false;}
+                    else if (!field_2_5_3.match(/^[A-Za-z]*$/)) {
+				    document.getElementById('2.5_country').innerHTML = "2.5  country : numerics are not allow. applicant name should contain alphabetic latters only";
+				    is_valid = false;}
+                    else{document.getElementById('2.5_country').innerHTML="";}
+                is_valid=false;}
+                else{document.getElementById('2.5_country').innerHTML="";}}
+
+
+                if(field_2_9==""){
+                    document.getElementById('pan-card').innerHTML="2.9  please enter pan-card number";
+                    is_valid=false; }
+                else if(field_2_9.length < 10){
+                    document.getElementById('pan-card').innerHTML="2.9  pan-card : please Enter 10 digit number only";
+                    is_valid=false;}
+                else if (!field_2_9.match(/^[0-9A-Za-z]*$/)) {
+				    document.getElementById('pan-card').innerHTML = "2.9  pan-card : special characters are not allowed";
+				    is_valid = false;}
+                else if (!field_2_9.match(/^[A-Z0-9]*$/)) {
+				    document.getElementById('pan-card').innerHTML = "2.9  pan-card : lowecase are not allow. voter-id should contain alphabetic latters and numeric only";
+				    is_valid = false;}
+                else{document.getElementById('pan-card').innerHTML="";}
+
+
+                if(field_2_10==""){
+                    document.getElementById('voter-id').innerHTML="2.10  please enter voter-id";
+                    is_valid=false; }
+                else if(field_2_10.length < 10){
+                    document.getElementById('voter-id').innerHTML="2.10  voter-id : please Enter 10 digit number only";
+                    is_valid=false;}
+                else if (!field_2_10.match(/^[0-9A-Za-z]*$/)) {
+				    document.getElementById('voter-id').innerHTML = "2.10  voter-id : special characters are not allowed";
+				    is_valid = false;}
+                else if (!field_2_10.match(/^[A-Z0-9]*$/)) {
+				    document.getElementById('voter-id').innerHTML = "2.10  voter-id : lowecase are not allow. voter-id should contain alphabetic latters and numeric only";
+				    is_valid = false;}
+                else{document.getElementById('voter-id').innerHTML="";}
+
+
+                if(document.querySelector('input[name="ee"]:checked') == null){
+                    document.getElementById('2.11 radio').innerHTML="2.11  please select Employement type";
+                    is_valid=false;}
+                else{document.getElementById('2.11 radio').innerHTML="";
+                    if(radio_30.checked == true || radio_31.checked == true || radio_32.checked == true){
+                        if(field_2_12 == ""){
+                        document.getElementById('2.12_organization').innerHTML="2.12  please enter organization name , field can't be Empty";
+                        is_valid=false;}
+                        else if(field_2_12.length > 60){
+                        document.getElementById('2.12_organization').innerHTML="2.12  organization name : length limit is must be less than 60 latters";
+                        is_valid=false;}
+                        else if (!field_2_12.match(/^[0-9A-Za-z\s]*$/)) {
+				        document.getElementById('2.12_organization').innerHTML = "2.12  organization name : special characters are not allowed";
+				        is_valid = false;}
+                        else if (!field_2_12.match(/^[A-Za-z\s]*$/)) {
+				        document.getElementById('2.12_organization').innerHTML = "2.12  organization name : should contain alphabetic latters only";
+				        is_valid = false;}
+                        else{document.getElementById('2.12_organization').innerHTML="";}
+                    is_valid=false;}
+                    else{document.getElementById('2.12_organization').innerHTML="";}}
+
+
+                if(field_2_16 == ""){
+                    document.getElementById('2.16_visible_mark').innerHTML="2.16  visible mark : please select any one option";
+                    is_valid=false;}
+                else{document.getElementById('2.16_visible_mark').innerHTML="";}
+
+
+                if(field_2_17 == ""){
+                    document.getElementById('aadharcard-no').innerHTML="2.17  field can't be Empty";
+                    is_valid=false;}
+                else if(field_2_17.length < 12){
+                    document.getElementById('aadharcard-no').innerHTML="2.17  Aadharcard-number : please Enter 12 digit number only";
+                    is_valid=false;}
+                else if (!field_2_17.match(/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/)) {
+				    document.getElementById('aadharcard-no').innerHTML = "2.17  Aadhar-card : please Enter numeric value only";
+				    is_valid = false;}
+                else{document.getElementById('aadharcard-no').innerHTML="";}
+
+
+                if(field_3_1 == ""){
+                    document.getElementById('3.1_father').innerHTML="3.1  father name : field can't be Empty";
+                    is_valid=false;}
+                else if(field_3_1.length > 500){
+                    document.getElementById('3.1_father').innerHTML="3.1  father name : length limit is upto 500 latters only";
+                    is_valid=false;}
+                else if (!field_3_1.match(/^[0-9A-Za-z]*$/)) {
+				    document.getElementById('3.1_father').innerHTML = "3.1  father name : special characters are not allowed";
+				    is_valid = false;}
+                else if (!field_3_1.match(/^[A-Za-z]*$/)) {
+				    document.getElementById('3.1_father').innerHTML = "3.1  father name : should contain alphabetic latters only";
+				    is_valid = false;}
+                else{document.getElementById('3.1_father').innerHTML="";}
+
+
+                if(field_3_1_1 == ""){
+                    document.getElementById('3.1_surname').innerHTML="3.1  surname : field can't be Empty";
+                    is_valid=false;}
+                else if(field_3_1_1.length > 500){
+                    document.getElementById('3.1_surname').innerHTML="3.1  surname : length limit is upto 500 latters only";
+                    is_valid=false;}
+                else if (!field_3_1_1.match(/^[0-9A-Za-z]*$/)) {
+				    document.getElementById('3.1_surname').innerHTML = "3.1  surname : special characters are not allowed";
+				    is_valid = false;}
+                else if (!field_3_1_1.match(/^[A-Za-z]*$/)) {
+				    document.getElementById('3.1_surname').innerHTML = "3.1  surname : should contain alphabetic latters only";
+				    is_valid = false;}
+                else{document.getElementById('3.1_surname').innerHTML="";}
+
+
+                if(field_3_2 == ""){
+                    document.getElementById('3.2_mother').innerHTML="3.2  mother name : field can't be Empty";
+                    is_valid=false;}
+                else if(field_3_2.length > 500){
+                    document.getElementById('3.2_mother').innerHTML="3.2  mother name : length limit is upto 500 latters only";
+                    is_valid=false;}
+                else if (!field_3_2.match(/^[0-9A-Za-z]*$/)) {
+				    document.getElementById('3.2_mother').innerHTML = "3.2  mother name : special characters are not allowed";
+				    is_valid = false;}
+                else if (!field_3_2.match(/^[A-Za-z]*$/)) {
+				    document.getElementById('3.2_mother').innerHTML = "3.2  mother name : should contain alphabetic latters only";
+				    is_valid = false;}
+                else{document.getElementById('3.2_mother').innerHTML="";}
+
+
+                if(field_3_2_1 == ""){
+                    document.getElementById('3.2_surname').innerHTML="3.2  surname : field can't be Empty";
+                    is_valid=false;}
+                else if(field_3_2_1.length > 500){
+                    document.getElementById('3.2_surname').innerHTML="3.2  surname : length limit is upto 500 latters only";
+                    is_valid=false;}
+                else if (!field_3_2_1.match(/^[0-9A-Za-z]*$/)) {
+				    document.getElementById('3.2_surname').innerHTML = "3.2  surname : special characters are not allowed";
+				    is_valid = false;}
+                else if (!field_3_2_1.match(/^[A-Za-z]*$/)) {
+				    document.getElementById('3.2_surname').innerHTML = "3.2  surname : should contain alphabetic latters only";
+				    is_valid = false;}
+                else{document.getElementById('3.2_surname').innerHTML="";}
+
+
+                if(field_3_3 == ""){
+                    document.getElementById('3.3_Guardian').innerHTML="3.3  Gaurdian-name : field can't be Empty";
+                    is_valid=false;}
+                else if(field_3_3.length > 500){
+                    document.getElementById('3.3_Guardian').innerHTML="3.3  Gaurdian-name : length limit is upto 500 latters only";
+                    is_valid=false;}
+                else if (!field_3_3.match(/^[0-9A-Za-z]*$/)) {
+				    document.getElementById('3.3_Guardian').innerHTML = "3.3  Gaurdian-name : special characters are not allowed";
+				    is_valid = false;}
+                else if (!field_3_3.match(/^[A-Za-z]*$/)) {
+				    document.getElementById('3.3_Guardian').innerHTML = "3.3  Gaurdian-name : should contain alphabetic latters only";
+				    is_valid = false;}
+                else{document.getElementById('3.3_Guardian').innerHTML="";}
+
+
+                if(field_3_3_1 == ""){
+                    document.getElementById('3.3_surname').innerHTML="3.3  surname : field can't be Empty";
+                    is_valid=false;}
+                else if(field_3_3_1.length > 500){
+                    document.getElementById('3.3_surname').innerHTML="3.3  surname : length limit is upto 500 latters only";
+                    is_valid=false;}
+                else if (!field_3_3_1.match(/^[0-9A-Za-z]*$/)) {
+				    document.getElementById('3.3_surname').innerHTML = "3.3  surname : special characters are not allowed";
+				    is_valid = false;}
+                else if (!field_3_3_1.match(/^[A-Za-z]*$/)) {
+				    document.getElementById('3.3_surname').innerHTML = "3.3  surname : should contain alphabetic latters only";
+				    is_valid = false;}
+                else{document.getElementById('3.3_surname').innerHTML="";}
+
+
+                if(field_3_4 == ""){
+                    document.getElementById('3.4_spouse').innerHTML="3.4  spouse-name : field can't be Empty";
+                    is_valid=false;}
+                else if(field_3_4.length > 500){
+                    document.getElementById('3.4_spouse').innerHTML="3.4  spouse-name : length limit is upto 500 latters only";
+                    is_valid=false;}
+                else if (!field_3_4.match(/^[0-9A-Za-z]*$/)) {
+				    document.getElementById('3.4_spouse').innerHTML = "3.4  spouse-name : special characters are not allowed";
+				    is_valid = false;}
+                else if (!field_3_4.match(/^[A-Za-z]*$/)) {
+				    document.getElementById('3.4_spouse').innerHTML = "3.4  spouse-name : should contain alphabetic latters only";
+				    is_valid = false;}
+                else{document.getElementById('3.4_spouse').innerHTML="";}
+
+
+                if(field_3_4_1 == ""){
+                    document.getElementById('3.4_surname').innerHTML="3.4  surname : field can't be Empty";
+                    is_valid=false;}
+                    else if(field_3_4_1.length > 500){
+                    document.getElementById('3.4_surname').innerHTML="3.4  surname : length limit is upto 500 latters only";
+                    is_valid=false;}
+                else if (!field_3_4_1.match(/^[0-9A-Za-z]*$/)) {
+				    document.getElementById('3.4_surname').innerHTML = "3.4  surname : special characters are not allowed";
+				    is_valid = false;}
+                else if (!field_3_4_1.match(/^[A-Za-z]*$/)) {
+				    document.getElementById('3.4_surname').innerHTML = "3.4  surname : should contain alphabetic latters only";
+				    is_valid = false;}
+                else{document.getElementById('3.4_surname').innerHTML="";}
+
+              
+            if(document.querySelector('input[name="file-pass"]:checked') == null){
+                    document.getElementById('3.5 radio').innerHTML="3.5  please select file number or passport number";
+                    is_valid=false;}
+            else{document.getElementById('3.5 radio').innerHTML="";
+            
+            if(document.getElementById('radio-passno').checked == true){
+
+                if(field_3_5_1 == ""){
+                    document.getElementById('3.5_father_pass').innerHTML="3.5  father passport number field can't be empty ";
+                    is_valid=false; }
+                else if(field_3_5_1.length < 8 || field_3_5_1.length > 8){
+                    document.getElementById('3.5_father_pass').innerHTML="3.5  father passport number: please Enter 8 digit number only";
+                    is_valid=false;}
+                else if (!field_3_5_1.match(/^[0-9A-Za-z]*$/)) {
+                    document.getElementById('3.5_father_pass').innerHTML = "3.5  father passport number: special characters are not allow";
+                    is_valid = false;}
+                else if (!field_3_5_1.match(/^[0-9A-Z]*$/)) {
+                    document.getElementById('3.5_father_pass').innerHTML = "3.5  father passport number: allow capital latters only";
+                    is_valid = false;}
+                else if (field_3_5_1.match(/^[0-9]*$/)) {
+                    document.getElementById('3.5_father_pass').innerHTML = "3.5  father passport number: only numerical are not allow";
+                    is_valid = false;}
+                else if (field_3_5_1.match(/^[A-Za-z]*$/)) {
+                    document.getElementById('3.5_father_pass').innerHTML = "3.5  father passport number: only alphabets are not allow";
+                    is_valid = false;}
+                else{document.getElementById('3.5_father_pass').innerHTML="";}
+
+
+                if(field_3_5_3 == ""){
+                    document.getElementById('3.5_mother_pass').innerHTML="3.5  mother passport number field can't be empty ";
+                    is_valid=false; }
+                else if(field_3_5_3.length < 8 || field_3_5_3.length > 8){
+                    document.getElementById('3.5_mother_pass').innerHTML="3.5  mother passport number: please Enter 8 digit number only";
+                    is_valid=false;}
+                else if (!field_3_5_3.match(/^[0-9A-Za-z]*$/)) {
+                    document.getElementById('3.5_mother_pass').innerHTML = "3.5  mother passport number: special characters are not allow";
+                    is_valid = false;}
+                else if (!field_3_5_3.match(/^[0-9A-Z]*$/)) {
+                    document.getElementById('3.5_mother_pass').innerHTML = "3.5  mother passport number: allow capital latters only";
+                    is_valid = false;}
+                else if (field_3_5_3.match(/^[0-9]*$/)) {
+                    document.getElementById('3.5_mother_pass').innerHTML = "3.5  mother passport number: only numerical are not allow";
+                    is_valid = false;}
+                else if (field_3_5_3.match(/^[A-Z]*$/)) {
+                    document.getElementById('3.5_mother_pass').innerHTML = "3.5  mother passport number: only alphabets are not allow";
+                    is_valid = false;}
+                else{document.getElementById('3.5_mother_pass').innerHTML="";}
+                is_valid=false;}
+
+            else{document.getElementById('3.5_father_pass').innerHTML="";
+                document.getElementById('3.5_mother_pass').innerHTML="";}
+
+            if(document.getElementById('radio-fileno').checked == true){
+
+                if(field_3_5_1 == ""){
+                    document.getElementById('3.5_father_file').innerHTML="3.5  father file number field can't be empty ";
+                    is_valid=false; }
+                else if(field_3_5_1.length < 12 || field_3_5_1.length > 12){
+                    document.getElementById('3.5_father_file').innerHTML="3.5  father file number: please Enter 12 digit number only";
+                    is_valid=false;}
+                else if (!field_3_5_1.match(/^[0-9A-Za-z]*$/)) {
+				    document.getElementById('3.5_father_file').innerHTML = "3.5  father file number: special characters are not allowing";
+				    is_valid = false;}
+                else if (!field_3_5_1.match(/^[0-9A-Z]*$/)) {
+				    document.getElementById('3.5_father_file').innerHTML = "3.5  father file number: allow capital latters only";
+				    is_valid = false;}
+                else if (!field_3_5_1.match(/[A-Za-z][A-Za-z][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9]/)) {
+				    document.getElementById('3.5_father_file').innerHTML = "3.5  father file number: first two digits must be starting from alphabet letters only";
+				    is_valid = false;}
+                
+                else{document.getElementById('3.5_father_file').innerHTML="";}
+
+
+                if(field_3_5_3 == ""){
+                    document.getElementById('3.5_mother_file').innerHTML="3.5  mother file number field can't be empty ";
+                    is_valid=false; }
+                else if(field_3_5_3.length < 12 || field_3_5_3.length > 12){
+                    document.getElementById('3.5_mother_file').innerHTML="3.5  mother file number: please Enter 12 digit number only";
+                    is_valid=false;}
+                else if (!field_3_5_3.match(/^[0-9A-Za-z]*$/)) {
+				    document.getElementById('3.5_mother_file').innerHTML = "3.5  mother file number: special characters are not allowing";
+				    is_valid = false;}
+                else if (!field_3_5_3.match(/^[0-9A-Z]*$/)) {
+				    document.getElementById('3.5_mother_file').innerHTML = "3.5  mother file number: allow capital latters only";
+				    is_valid = false;}
+                else if (!field_3_5_3.match(/[A-Za-z][A-Za-z][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9]/)) {
+				    document.getElementById('3.5_mother_file').innerHTML = "3.5  mother file number: first two digits must be starting from alphabet letters only";
+				    is_valid = false;}
+                
+                else{document.getElementById('3.5_mother_file').innerHTML="";}
+                is_valid=false;}
+
+            else{document.getElementById('3.5_father_file').innerHTML="";
+                document.getElementById('3.5_mother_file').innerHTML="";}}
+
+
+                if(field_4_1_1 == ""){
+                    document.getElementById('4.1_house').innerHTML="4.1  please enter house-no and street name , field can't be Empty";
+                    is_valid=false;}
+                else if(field_4_1_1.length < 10){
+                    document.getElementById('4.1_house').innerHTML="4.1  house-no & street name : atleast 10 characters are required";
+                    is_valid=false;}
+                else if (!field_4_1_1.match(/^[.,-:/0-9A-Za-z\s]*$/)) {
+				    document.getElementById('4.1_house').innerHTML = "4.1  house-no & street name : some special characters are not allowed";
+				    is_valid = false;}
+                else{document.getElementById('4.1_house').innerHTML="";}
+
+
+                if(field_4_1_2 == ""){
+                    document.getElementById('4.1_village').innerHTML="4.1  please enter village or town or city name , field can't be Empty";
+                    is_valid=false;}
+                else if (!field_4_1_2.match(/^[A-Za-z]*$/)) {
+				    document.getElementById('4.1_village').innerHTML = "4.1  village : should contain alphabetic latters only";
+				    is_valid = false;}
+                else{document.getElementById('4.1_village').innerHTML="";}
+
+
+                if(field_4_1_3 == ""){
+                    document.getElementById('4.1_district').innerHTML="4.1  please enter district name , field can't be Empty";
+                    is_valid=false;}
+                else if (!field_4_1_3.match(/^[A-Za-z]*$/)) {
+				    document.getElementById('4.1_district').innerHTML = "4.1  district : should contain alphabetic latters only";
+				    is_valid = false;}
+                else{document.getElementById('4.1_district').innerHTML="";}
+
+
+                if(field_4_1_4 == ""){
+                    document.getElementById('4.1_police_station').innerHTML="4.1  please enter police station name , field can't be Empty";
+                    is_valid=false;}
+                else if (!field_4_1_4.match(/^[A-Za-z\s]*$/)) {
+				    document.getElementById('4.1_police_station').innerHTML = "4.1  police station : should contain alphabetic latters only";
+				    is_valid = false;}
+                else{document.getElementById('4.1_police_station').innerHTML="";}
+
+
+                if(field_4_1_5 == ""){
+                    document.getElementById('4.1_state').innerHTML="4.1  please enter your state name , field can't be Empty";
+                    is_valid=false;}
+                else if (!field_4_1_5.match(/^[A-Za-z]*$/)) {
+				    document.getElementById('4.1_state').innerHTML = "4.1  state : should contain alphabetic latters only";
+				    is_valid = false;}
+                else{document.getElementById('4.1_state').innerHTML="";}
+
+
+                if(field_4_1_6 == ""){
+                    document.getElementById('4.1_pin').innerHTML="4.1  please enter pincode number , field can't be Empty";
+                    is_valid=false;}
+                else if(field_4_1_6.length < 6 || field_4_1_6.length > 6){
+                    document.getElementById('4.1_pin').innerHTML="4.1  pincode : please Enter 6 digit number only";
+                    is_valid=false;}
+                else if (!field_4_1_6.match(/[0-9][0-9][0-9][0-9][0-9][0-9]/)) {
+				    document.getElementById('4.1_pin').innerHTML = "4.1  pincode : please Enter numeric value only";
+				    is_valid = false;}    
+                else{document.getElementById('4.1_pin').innerHTML="";}
+
+
+                if(field_4_1_7 == ""){
+                    document.getElementById('4.1_mobile').innerHTML="4.1  please enter mobile number , field can't be Empty";
+                    is_valid=false;}
+                else if(field_4_1_7.length < 10){
+                    document.getElementById('4.1_mobile').innerHTML="4.1  mobile number : please Enter 10 digit number only";
+                    is_valid=false;}
+                else if (!field_4_1_7.match(/^[0-9A-Za-z]*$/)) {
+				    document.getElementById('4.1_mobile').innerHTML = "4.1  mobile number : special characters are not allow";
+				    is_valid = false;}
+                else if (!field_4_1_7.match(/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/)) {
+				    document.getElementById('4.1_mobile').innerHTML = "4.1  mobile number : please Enter numeric value only";
+				    is_valid = false;}
+                else{document.getElementById('4.1_mobile').innerHTML="";}
+
+
+                if(field_4_1_8 == ""){
+                    document.getElementById('4.1_telephone').innerHTML="4.1  please enter telephone number , field can't be Empty";
+                    is_valid=false;}
+                else if(field_4_1_8.length < 10){
+                    document.getElementById('4.1_telephone').innerHTML="4.1  telephone number : please Enter 10 digit number only";
+                    is_valid=false;}
+                else if (!field_4_1_8.match(/^[0-9A-Za-z]*$/)) {
+				    document.getElementById('4.1_telephone').innerHTML = "4.1  telephone number : special characters are not allow";
+				    is_valid = false;}
+                else if (!field_4_1_8.match(/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/)) {
+				    document.getElementById('4.1_telephone').innerHTML = "4.1  telephone number : please Enter numeric value only";
+				    is_valid = false;}
+                else{document.getElementById('4.1_telephone').innerHTML="";}
+
+
+                if(field_4_1_9 == ""){
+                    document.getElementById('4.1_email').innerHTML="4.1  please enter email-id , field can't be Empty";
+                    is_valid=false;}
+                else if(!field_4_1_9.match(/^[@.a-zA-Z0-9]*$/)){
+                    document.getElementById('4.1_email').innerHTML = "4.1  email-id : special characters are not allow (except . and @)";
+				    is_valid = false;}
+                else if(field_4_1_9.match(/^[a-z0-9]+(\.[a-z0-9]+)*$/)){
+                    document.getElementById('4.1_email').innerHTML = "4.1  email-id : must enter @";
+				    is_valid = false;}
+                else if(!field_4_1_9.match(/^[a-z0-9]+@[a-z0-9]+(\.[a-z0-9.]+)*$/)){
+                    document.getElementById('4.1_email').innerHTML = "4.1  email-id : invalid format";
+				    is_valid = false;}
+                else{document.getElementById('4.1_email').innerHTML="";}
+
+
+                if(document.querySelector('input[name="ab"]:checked') == null){
+                    document.getElementById('4.2 radio').innerHTML="4.2  Is permanent address same as present address? select yes or no.";
+                    is_valid=false;}
+                else{document.getElementById('4.2 radio').innerHTML="";
+                    if(document.getElementById('radio-51').checked == true){
+
+                        if(field_5_1 == ""){
+                        document.getElementById('5.1_name_address').innerHTML="5  please enter name and address , field can't be Empty";
+                        is_valid=false;}
+                        else if (!field_5_1.match(/^[.,-:/0-9A-Za-z\s]*$/)) {
+				        document.getElementById('5.1_name_address').innerHTML = "5  name & address : some special characters are not allowed";
+				        is_valid = false;}
+                        else{document.getElementById('5.1_name_address').innerHTML="";}
+
+
+                        if(field_5_2 == ""){
+                        document.getElementById('5.2_mobile').innerHTML="5  please enter mobile number , field can't be Empty";
+                        is_valid=false;}
+                        else if(field_5_2.length < 10){
+                        document.getElementById('5.2_mobile').innerHTML="5  mobile number : please Enter 10 digit number only";
+                        is_valid=false;}
+                        else if (!field_5_2.match(/^[0-9A-Za-z]*$/)) {
+				        document.getElementById('5.2_mobile').innerHTML = "5  mobile number : special characters are not allow";
+				        is_valid = false;}
+                        else if(!field_5_2.match(/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/)) {
+				        document.getElementById('5.2_mobile').innerHTML = "5  mobile number : please Enter numeric value only";
+				        is_valid = false;}
+                        else{document.getElementById('5.2_mobile').innerHTML="";}
+
+
+                        if(field_5_3 == ""){
+                        document.getElementById('5.3_telephone').innerHTML="5  please enter telephone number , field can't be Empty";
+                        is_valid=false;}
+                        else if(field_5_3.length < 10){
+                        document.getElementById('5.3_telephone').innerHTML="5  telephone number : please Enter 10 digit number only";
+                        is_valid=false;}
+                        else if (!field_5_3.match(/^[0-9A-Za-z]*$/)) {
+				        document.getElementById('5.3_telephone').innerHTML = "5  telephone number : special characters are not allow";
+				        is_valid = false;}
+                        else if (!field_5_3.match(/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/)) {
+				        document.getElementById('5.3_telephone').innerHTML = "5  telephone number : please Enter numeric value only";
+				        is_valid = false;}
+                        else{document.getElementById('5.3_telephone').innerHTML="";}
+
+
+                        if(field_5_4 == ""){
+                        document.getElementById('5.4_email').innerHTML="5 please enter email-id , field can't be Empty";
+                        is_valid=false;}
+                        else if(!field_5_4.match(/^[@.a-zA-Z0-9]*$/)){
+                        document.getElementById('5.4_email').innerHTML = "5  email-id : special characters are not allow (except . and @)";
+				        is_valid = false;}
+                        else if(field_5_4.match(/^[a-z0-9]+(\.[a-z0-9]+)*$/)){
+                        document.getElementById('5.4_email').innerHTML = "5  email-id : must enter @";
+				        is_valid = false;}
+                        else if(!field_5_4.match(/^[a-z0-9]+@[a-z0-9]+(\.[a-z0-9.]+)*$/)){
+                        document.getElementById('5.4_email').innerHTML = "5  email-id : invalid format";
+				        is_valid = false;}
+                        else{document.getElementById('5.4_email').innerHTML="";}
+
+                    is_valid=false;}
+                    else{document.getElementById('5.1_name_address').innerHTML="";
+                    document.getElementById('5.2_mobile').innerHTML="";
+                    document.getElementById('5.3_telephone').innerHTML="";
+                    document.getElementById('5.4_email').innerHTML="";}}
+
+                
+                if(field_8_1 == ""){
+                    document.getElementById('8.1_fee').innerHTML="8.1  please enter fee , field can't be Empty";
+                    is_valid=false;}
+                else if (!field_8_1.match(/^[0-9.]*$/)) {
+				    document.getElementById('8.1_fee').innerHTML = "8.1  fee : only numbers with decimal or numbers only are allow";
+				    is_valid = false;}
+                else{document.getElementById('8.1_fee').innerHTML="";}
+
+
+                if(field_8_2_1 == ""){
+                    document.getElementById('DD_number').innerHTML="8.2  please enter DD number , field can't be empty";
+                    is_valid=false;}
+                else if (field_8_2_1.match(/^[.]*$/)) {
+				    document.getElementById('DD_number').innerHTML = "8.2  DD number : decimal are not allow";
+				    is_valid = false;}    
+                else if (!field_8_2_1.match(/^[0-9]*$/)) {
+				    document.getElementById('DD_number').innerHTML = "8.2  DD number : please enter numerical only";
+				    is_valid = false;}
+                else{document.getElementById('DD_number').innerHTML="";}
+
+
+                if(field_8_2_2_date == ""){
+                    document.getElementById('DD_issue-date').innerHTML="8.2  please enter date of issue";
+                    is_valid=false;}
+                else if(field_8_2_2 > Date.now()){
+                    document.getElementById('DD_issue-date').innerHTML="8.2  issue date must be less than current date";
+                    is_valid=false;} 
+                else{document.getElementById('DD_issue-date').innerHTML="";}
+
+
+                if(field_8_2_3_date == ""){
+                    document.getElementById('DD_expiry-date').innerHTML="8.2  please enter date of expiry";
+                    is_valid=false;}
+                else if(field_8_2_3 < field_8_2_2){
+                    document.getElementById('DD_expiry-date').innerHTML="8.2  expiry date must be greater than issue date";
+                    is_valid=false;}
+                else{document.getElementById('DD_expiry-date').innerHTML="";}
+                
+
+                
+                if(field_8_2_4 == ""){
+                    document.getElementById('8.2_bank').innerHTML="8.2  please enter bank name , field can't be empty";
+                    is_valid=false;}
+                else if (!field_8_2_4.match(/^[0-9A-Za-z\s]*$/)) {
+				    document.getElementById('8.2_bank').innerHTML = "8.2 bank name : special characters are not allow";
+				    is_valid = false;}
+                else if (!field_8_2_4.match(/^[A-Za-z\s]*$/)) {
+				    document.getElementById('8.2_bank').innerHTML = "8.2 bank name : please enter alphabetic latters only";
+				    is_valid = false;}
+                else{document.getElementById('8.2_bank').innerHTML="";}
+
+
+                if(field_8_2_5 == ""){
+                    document.getElementById('8.2_branch').innerHTML="8.2  please enter branch name  , field can't be empty";
+                    is_valid=false;}
+                else if (!field_8_2_5.match(/^[0-9A-Za-z\s]*$/)) {
+				    document.getElementById('8.2_branch').innerHTML = "8.2 branch : special characters are not allow";
+				    is_valid = false;}
+                else if (!field_8_2_5.match(/^[A-Za-z\s]*$/)) {
+				    document.getElementById('8.2_branch').innerHTML = "8.2 branch : please enter alphabetic latters only";
+				    is_valid = false;}
+                else{document.getElementById('8.2_branch').innerHTML="";}
+
+
+                if(field_10_1 == ""){
+                    document.getElementById('10_place').innerHTML="10.  please enter place , field can't be empty";
+                    is_valid=false;}
+                else if (!field_10_1.match(/^[0-9A-Za-z\s]*$/)) {
+				    document.getElementById('10_place').innerHTML = "10.  place : special characters are not allow";
+				    is_valid = false;}
+                else if (!field_10_1.match(/^[A-Za-z\s]*$/)) {
+				    document.getElementById('10_place').innerHTML = "10.  place : please enter alphabetic latters only";
+				    is_valid = false;}
+                else{document.getElementById('10_place').innerHTML="";}
+
+
+                if(field_10_2 == ""){
+                    document.getElementById('10_sign').innerHTML="10.  please select photo of signature";
+                    is_valid=false;}
+                else{document.getElementById('10_sign').innerHTML="";}
+
+
+                if(field_10_3 == ""){
+                    document.getElementById('10_date').innerHTML="10.  please select date , field can't be empty";
+                    is_valid=false;}
+                else{document.getElementById('10_date').innerHTML="";}
+
+                return is_valid;
+            }
+
+        </script>
+
+    </head>
+
+    <body style="background-color: rgb(40, 88, 85)">
+
+    <form name="form" onsubmit=" return validation()">
+    
+    <div id="div1">
+
+    <p style="text-align: right; font-size: 15; padding-top: 5%;";><strong>File Number (For Office Use Only)</strong></p>
+    <input type="text" maxlength="12" style="margin-left: 64.3%;width: 400px;height: 30px;border-width: 1px;" id="a_field"><br>
+            
+    <p style="font: bold; text-align: center;font-size: 20px;background-color: yellowgreen;"> 
+    <strong>GOVERNMENT OF INDIA, MINISTRY OF EXTERNAL AFFAIRS <br> PASSPORT APPLICATION FORM</strong> </p>
+    <p style="font-size: 14px; font-weight: bold;padding-top: 10;">Please read the Passport Instruction Booklet carefully before filling the form. Fill this form in CAPITAL LETTERS using blue/ black ink ball point pen only. Furnishing of incorrect information/ suppression of information would
+       lead to rejection of the application and would attract penal provisions as prescribed under the Passports Act, 1967. Please produce your original documents at the time of submission of the form.</p><br>
+
+    <div style="height: 25%;width: 15%;border-style: solid;position: relative;float: right;margin-right: 15%;font-size: 14px;text-align: center;padding-top: 10px;padding-left: 10px;padding-right: 10px;background-color: rgb(247, 199, 207)">
+        Please select your unsigned recent colour photograph with white background of size 4.5cm X 3.5cm. [Not needed for applicants submitting the application at Passport Seva Kendra]
+    <input id="box_1" type="file" accept=".jpg,.png,.jpeg" style="margin-top: 20px;margin-left: 2%;margin-bottom: 3%;">
+    </div>
+
+    <p style="font-size: 14px;"><strong style="background-color: rgb(139, 184, 241)">1. Service Required</strong></p>
+
+                <p style="font-size: 14px;">
+                <strong>1.1 Applying for</strong>
+                <input type="radio" name="p" style="margin-left: 5%;" id="radio-1" onclick="check()">
+                <label>Fresh Passport</label>
+                <input type="radio" name="p" style="margin-left: 9.3%;" id="radio-2" onclick="check()">
+                <label>Re-issue of Passport</label>
+                </p>
+
+                <p style="font-size: 14px;">
+                <strong>1.2 If re-issue, specify reason(s)</strong><br>
+                <input type="radio" name="q" style="margin-top: 15px;" id="radio-3" onclick="check()">
+                <label>Validity Expired within 3 years/ Due to Expire</label>
+                <input type="radio" name="q" style="margin-left: 5%;" id="radio-4" onclick="check()">
+                <label>Exhaustion of Pages</label><br>
+                <input type="radio" name="q" style="margin-top: 13px;" id="radio-5" onclick="check()">
+                <label>Validity Expired more than 3 years ago </label>
+                <input type="radio" name="q" style="margin-left: 9.5%;" id="radio-6" onclick="check()">
+                <label>Lost Passport</label><br>
+                <input type="radio" name="q" style="margin-top: 13px;" id="radio-7" onclick="check()">
+                <label>Change in Existing Personal Particulars</label>
+                <input type="radio" name="q" style="margin-left: 8.6%;" id="radio-8" onclick="check()">
+                <label>Damaged Passport</label>
+                </p>
+
+                <p style="font-size: 14px;">
+                <strong>1.3 If change in existing personal particulars, specify reason(s)</strong>
+                </p>
+
+                <div style=" background-color: rgb(247, 199, 207);height: 13%;width: 25%;border-style: solid;position: relative;float: right;margin-right: 10%;font-size: 15px;text-align: center;padding-top: 10px;padding-left: 10px;padding-right: 10px;">
+                    Signature/ Left Hand Thumb Impression of Illiterate Applicant and Minors who cannot sign.<br>
+                <input id="box_2" type="file" accept=".jpg,.png,.jpeg" style="margin-top: 8px;margin-left: 2%;margin-bottom: 3%;">
+                </div>
+            
+                <p style="font-size: 14px;">
+                <input type="checkbox" name="cc--" style="margin-top: 5px;" id="check-1" onclick="check()">
+                <label>Appearance </label>
+                <input type="checkbox" name="cc--" style="margin-left: 5%;" id="check-2" onclick="check()">
+                <label>Signature</label>
+                <input type="checkbox" name="cc--" style="margin-left: 5%;" id="check-3" onclick="check()">
+                <label>Given Name</label><br>
+                <input type="checkbox" name="cc--" style="margin-top: 13px;" id="check-4" onclick="check()">
+                <label>Surname </label>
+                <input type="checkbox" name="cc--" style="margin-left: 7%;" id="check-5" onclick="check()">
+                <label>Date of Birth</label>
+                <input type="checkbox" name="cc--" style="margin-left: 3%;" id="check-6" onclick="check()">
+                <label>Spouse Name</label><br>
+                <input type="checkbox" name="cc--" style="margin-top: 13px;" id="check-7" onclick="check()">
+                <label>Address</label>
+                <input type="checkbox" name="cc--" style="margin-left: 7.7%;" id="check-8" onclick="check()">
+                <label>Delete ECR</label>
+                <input type="checkbox" name="cc--" style="margin-left: 3.5%;" id="check-9" onclick="check()">
+                <label>Others, Please specify</label><br>
+                </p>
+               
+                <p><textarea id="field_1_3" style="width: 400px;height: 28px;"></textarea></p>
+
+                <p style="font-size: 14px;">
+                <strong>1.4 Type of Application</strong>
+                <input type="radio" name="o" style="margin-left: 10%;" id="radio-9">
+                <label>Normal </label>
+                <input type="radio" name="o" style="margin-left: 5%;" id="radio-10">
+                <label>Tatkaal</label>
+                </p>
+
+                <p style="font-size: 14px;">
+                <strong>1.5 Type of Passport Booklet</strong>
+                <input type="radio" name="nn" style="margin-left: 5.2%;" id="radio-11">
+                <label>36 Pages</label>
+                <input type="radio" name="nn" style="margin-left: 3.5%;" id="radio-12">
+                <label>60 Pages</label>
+                </p>
+
+                <p style="font-size: 14px;">
+                <strong>1.6 Validity Required</strong>
+                <input type="radio" name="mm" style="margin-left: 11.6%;" id="radio-13">
+                <label>10 Years</label>
+                <input type="radio" name="mm" style="margin-left: 4.1%;" id="radio-14">
+                <label>Up to age 18</label>  <br>
+                <abbr style="font-size: 12px; font-weight: lighter;">(For minors between 15 and 18 years)</abbr><br><br><br>
+
+    <strong style="background-color: rgb(139, 184, 241)">2. Applicant Details</strong><br><br>
+    
+                <strong style="margin-top: 5%;">2.1 Applicant's Given Name</strong>
+                <abbr>  (Given Name means First name followed by Middle name (If any))(Initials not allowed)</abbr>
+                <input id="field_2_1" type="text" style="width: 400px;height: 28px;margin-top: 10px;"><br><br>
+                <strong>Surname</strong><br>
+                <input id="field_2_1_1" type="text" style="width: 400px;height: 28px;margin-top: 10px;"><br><br>
+
+                <strong>2.2 Are you known by any other names (aliases)?</strong>
+                <input type="radio" name="kk" style="margin-left: 5.2%;" id="radio-15">
+                <label>Yes</label>
+                <input type="radio" name="kk" style="margin-left: 3.5%;" id="radio-16">
+                <label>No</label><br><br>
+                <abbr>If yes, provide details in Column 1 of Supplementary Form</abbr><br><br>
+
+                <strong>2.3 Have you ever changed your name?</strong>
+                <input type="radio" name="ll" style="margin-left: 12.8%;" id="radio-17">
+                <label>Yes</label>
+                <input type="radio" name="ll" style="margin-left: 3.5%;" id="radio-18">
+                <label>No</label><br><br>
+                <abbr>If yes, provide details in Column 2 of Supplementary Form</abbr><br><br>
+                
+                <strong>2.4 Date of Birth (DD-MM-YYYY)</strong><br><br>
+                <input id="field_2_4" type="date" style="width: 400px;height: 28px;"><br><br>
+
+                <strong>2.5 Place of Birth</strong>
+                <input type="radio" name="hh--" style="margin-left: 6.5%;" id="radio-india" onclick="check()">
+                <label>India</label>
+                <input type="radio" name="hh--" style="margin-left: 4.5%;" id="radio-outside" onclick="check()">
+                <label>outside of country</label><br><br>
+                <abbr>Village or Town or City</abbr><br>
+                <input id="field_2_5" type="text" style="width: 400px;height: 28px;margin-top: 10px;"><br><br>
+                <abbr>District (If born in India)</abbr><br>
+                <input id="field_2_5_1" type="text" style="width: 400px;height: 28px;margin-top: 10px;"><br><br>
+                <abbr>State/ UT (If born in India)</abbr><br>
+                <input id="field_2_5_2" type="text" style="width: 400px;height: 28px;margin-top: 10px;"><br><br>
+                <abbr>Region/Country (If born abroad) If born before 15/08/1947 in a place now in Pakistan or Bangladesh, write "Undivided India"</abbr><br>
+                <input id="field_2_5_3" type="text" style="width: 400px;height: 28px;margin-top: 10px;"><br><br>
+
+                <strong>2.6 Gender</strong>
+                <input type="radio" name="hh" style="margin-left: 15.9%;" id="radio-19">
+                <label>Male</label>
+                <input type="radio" name="hh" style="margin-left: 4.1%;" id="radio-20">
+                <label>Female</label>
+                <input type="radio" name="hh" style="margin-left: 4.1%;" id="radio-21">
+                <label>Transgender</label><br>
+
+                <strong>2.7 Marital Status</strong>
+                <input type="radio" name="ff" style="margin-left: 10.8%;" id="radio-22">
+                <label>Single</label>
+                <input type="radio" name="ff" style="margin-left: 3.1%;" id="radio-23">
+                <label>Married</label>
+                <input type="radio" name="ff" style="margin-left: 4.1%;" id="radio-24">
+                <label>Divorced</label>
+                <input type="radio" name="ff" style="margin-left: 4.1%;" id="radio-25">
+                <label>Widow/ Widower</label>
+                <input type="radio" name="ff" style="margin-left: 4.1%;" id="radio-26">
+                <label>Separated</label><br>
+
+                <strong>2.8 Citizenship of India by</strong>
+                <input type="radio" name="gg" style="margin-left: 4.1%;" id="radio-27">
+                <label>Birth</label>
+                <input type="radio" name="gg" style="margin-left: 4.3%;" id="radio-28">
+                <label>Descent</label>
+                <input type="radio" name="gg" style="margin-left: 3.7%;" id="radio-29">
+                <label>Registration/ Naturalization</label><br><br>
+
+                <strong>2.9 PAN (If available)</strong> <strong style="margin-left: 300px;">2.10 Voter ID (If available)</strong><br><br>
+                <input id="field_2_9" maxlength="10" type="text" placeholder="10 digits" style="width: 400px; height: 28px;">
+                <input id="field_2_10" maxlength="10" type="text" placeholder="10 digits" style="margin-left: 4%;width: 400px; height: 28px;"><br><br>
+                
+                <strong>2.11 Employment Type</strong><br><br>
+                <input type="radio" name="ee" id="radio-30" onclick="check()">
+                <label>PSU</label>
+                <input type="radio" name="ee" style="margin-left: 4.6%;" id="radio-31" onclick="check()">  
+                <label>Government</label>
+                <input type="radio" name="ee" style="margin-left: 4.1%;" id="radio-32" onclick="check()">
+                <label>Statutory Body</label>
+                <input type="radio" name="ee" style="margin-left: 3.6%;" id="radio-33" onclick="check()">
+                <label>Retired Government Servant</label>
+                <input type="radio" name="ee" style="margin-left: 4.1%;" id="radio-34" onclick="check()">
+                <label>Self Employed</label><br>
+                <input type="radio" name="ee" id="radio-35" onclick="check()">
+                <label>Private</label>
+                <input type="radio" name="ee" style="margin-left: 2.9%;" id="radio-36" onclick="check()">
+                <label>Homemaker</label>
+                <input type="radio" name="ee" style="margin-left: 4.1%;" id="radio-37" onclick="check()">
+                <label>Not Employed</label>
+                <input type="radio" name="ee" style="margin-left: 4.1%;" id="radio-38" onclick="check()">
+                <label>Retired-Private Service</label>
+                <input type="radio" name="ee" style="margin-left: 8.2%;" id="radio-39" onclick="check()">
+                <label>Student</label><br>
+                <input type="radio" name="ee" id="radio-40" onclick="check()">
+                <label>Others</label>
+                <input type="radio" name="ee" style="margin-left: 3.1%;" id="radio-41" onclick="check()">
+                <label>Owners, Partners & Directors of companies which are members of CII, FICCI & ASSOCHAM</label><br><br>
+
+                <strong>2.12 If employed in Government/ Statutory Body/ PSU, specify organization name</strong>
+                <textarea id="field_2_12" maxlength="500" type="text" style="width: 400px;height: 28px;margin-top: 10px;"></textarea><br><br>
+
+                <strong>2.13 Is either of your parent (in case of minor)/ spouse, a government servant? </strong>
+                <input type="radio" name="bb" style="margin-left: 5.2%;" id="radio-42">
+                <label>Yes</label>
+                <input type="radio" name="bb" style="margin-left: 3.5%;" id="radio-43">
+                <label>No</label><br><br>
+
+                <strong>2.14 Educational Qualification</strong><br><br>
+                <input type="radio" name="cc" id="radio-44">
+                <label>7th pass or less </label>
+                <input type="radio" name="cc" style="margin-left: 10.6%;" id="radio-45">
+                <label>Between 8th and 9th Standard</label><br>
+                <input type="radio" name="cc" id="radio-46">
+                <label>10th pass and above</label>
+                <input type="radio" name="cc" style="margin-left: 6.9%;" id="radio-47">
+                <label>Graduate and above</label><br><br>
+
+                <strong>2.15 Are you eligible for Non-ECR category? </strong>
+                <input type="radio" name="aa" style="margin-left: 32.8%;" id="radio-48">
+                <label>Yes</label>
+                <input type="radio" name="aa" style="margin-left: 3.5%;" id="radio-49">
+                <label>No</label><br>
+                <abbr>(For details, see Column 2.15, section B of Instruction Booklet)</abbr><br><br>
+
+                <strong>2.16 Visible Distinguishing Mark</strong>
+                <input id="field_2_16" list="visible Distinguishing mark" type="text" style="margin-left: 70px;width: 400px;height: 28px;">
+                <datalist id="visible Distinguishing mark">
+                <option value="Mole"></option>
+                <option value="Birthmark"></option>
+                <option value="Scar"></option>
+                <option value="permanent tattoo"></option>
+                <option value="cut mark"></option>
+                <option value="Wound mark"></option>
+                <option value="Any other permanent mark"></option> 
+                </datalist>
+                <br><br>
+
+                <strong>2.17 Aadhaar Number</strong>
+                <input id="field_2_17" maxlength="12" type="tel" placeholder="12 digit" style="width: 400px;height: 28px;margin-left: 140px;"><br><br>
+    
+    <strong style="background-color: rgb(139, 184, 241)">3. Family Details</strong><br><br>
+                
+                <strong style="margin-top: 5%;">3.1 Father's Given Name</strong>
+                <abbr> (Given Name means First name followed by Middle name (If any)) (Initials not allowed)</abbr>
+                <input id="field_3_1" type="text" style="width: 400px;height: 28px;margin-top: 10px;"><br><br>
+                <strong>Surname</strong><br>
+                <input id="field_3_1_1" type="text" style="width: 400px;height: 28px;margin-top: 10px;"><br><br>
+
+                <strong style="margin-top: 5%;">3.2 Mother's Given Name</strong>
+                <abbr> (Given Name means First name followed by Middle name (If any)) (Initials not allowed)</abbr>
+                <input id="field_3_2" type="text" style="width: 400px;height: 28px;margin-top: 10px;"><br><br>
+                <strong>Surname</strong><br>
+                <input id="field_3_2_1" type="text" style="width: 400px;height: 28px;margin-top: 10px;"><br><br>
+
+                <strong style="margin-top: 5%;">3.3 Legal Guardian's Given Name</strong>
+                <abbr> (If applicable) (Initials not allowed)</abbr><br>
+                <input id="field_3_3" type="text" style="width: 400px;height: 28px;margin-top: 10px;"><br><br>
+                <strong>Surname</strong><br>
+                <input id="field_3_3_1" type="text" style="width: 400px;height: 28px;margin-top: 10px;"><br><br>
+
+                <strong style="margin-top: 5%;">3.4 Spouse's Given Name</strong>
+                <abbr> (Given Name means First name followed by Middle name (If any)) (Initials not allowed)</abbr>
+                <input id="field_3_4" type="text" style="width: 400px;height: 28px;margin-top: 10px;"><br><br>
+                <strong>Surname</strong><br>
+                <input id="field_3_4_1" type="text" style="width: 400px;height: 28px;margin-top: 10px;"><br><br>
+
+                <strong>3.5 If applicant is minor, provide following details</strong><br><br>
+                <strong>Parent's Passport Details</strong>
+                <abbr> (If passport has been applied for but not received, give File Number)</abbr><br><br>
+                <input type="radio" name="file-pass" id="radio-fileno">
+                <label>file number</label>
+                <input type="radio" name="file-pass" style="margin-left: 3.5%;" id="radio-passno">
+                <label>passport number</label><br><br>
+                <abbr>Father/ Legal Guardian's File/ Passport Number</abbr>
+                <abbr style="margin-left: 140px;">Father/ Legal Guardian's Nationality, if not Indian</abbr><br>
+                <input id="field_3_5_1" type="text" style="width: 400px;height: 28px;margin-top: 10px;">
+                <input id="field_3_5_2" type="text" style="width: 400px;height: 28px;margin-left: 4%;"><br><br>
+                <abbr>Mother/ Legal Guardian's File/ Passport Number</abbr>
+                <abbr style="margin-left: 140px;">Mother/ Legal Guardian's Nationality, if not Indian</abbr><br>
+                <input id="field_3_5_3" type="text" style="width: 400px;height: 28px;margin-top: 10px;">
+                <input id="field_3_5_4" type="text" style="width: 400px;height: 28px;margin-left: 4%;"><br><br><br></p>
+        
+    <p style="font-size: 14px;"><strong style="background-color: rgb(139, 184, 241)">4. Present Residential Address Details (Where applicant presently resides)</strong><br><br>
+                
+                <strong style="margin-top: 5%;">4.1 House No. and Street Name</strong><br>
+                <input id="field_4_1_1" type="text" style="width: 400px;height: 28px;margin-top: 10px;"><br><br>
+                <abbr>Village or Town or City</abbr><br>
+                <input id="field_4_1_2" type="text" style="width: 400px;height: 28px;"><br><br>
+                <abbr>District</abbr><br>
+                <input id="field_4_1_3" type="text" style="width: 400px;height: 28px;"><br><br>
+                <abbr>Police Station</abbr><br>
+                <input id="field_4_1_4" type="text" style="width: 400px;height: 28px;"><br><br>
+                <abbr>State/ UT</abbr><br>
+                <input id="field_4_1_5" type="text" style="width: 400px;height: 28px;"><br><br>
+                <abbr>PIN</abbr><br>
+                <input id="field_4_1_6" maxlength="6" type="tel" placeholder="(6 digits)" style="width: 400px;height: 28px;"><br><br>
+                <abbr>Mobile Number</abbr>
+                <abbr style="margin-left: 340px;">Telephone Number</abbr><br><br>
+                <input id="field_4_1_7" maxlength="10" type="tel" placeholder="(10 digits)" style="width: 400px;height: 28px">
+                <input id="field_4_1_8" maxlength="10" type="tel" placeholder="(10 digits)" style="width: 400px;margin-left: 4%;height: 28px"><br><br>
+                <abbr>E-mail Id</abbr><br><br>
+                <input id="field_4_1_9" type="text" style="width: 400px;height: 28px;"><br><br>
+
+                <strong>4.2 Is permanent address same as present address? </strong>
+                <input type="radio" name="ab" style="margin-left: 10%;" id="radio-50" onclick="check()">
+                <label>Yes</label>
+                <input type="radio" name="ab" style="margin-left: 3.5%;" id="radio-51" onclick="check()">
+                <label>No</label><br>
+                <abbr>(If no, provide details in Column 4 of Supplementary Form)</abbr><br><br>
+
+    <strong style="background-color: rgb(139, 184, 241)"> 5. Emergency Contact Details </strong><br><br>
+
+                <abbr>Name and Address (Mention address only if different from present residential address)</abbr><br><br>
+                <input id="field_5_1" type="text" style="width: 400px;height: 28px;"><br><br>
+                <abbr>Mobile Number</abbr>
+                <abbr style="margin-left: 340px;">Telephone Number</abbr><br><br>
+                <input id="field_5_2" maxlength="10" type="tel" placeholder="(10 digits)" style="width: 400px;height: 28px">
+                <input id="field_5_3" maxlength="10" type="tel" placeholder="(10 digits)" style="width: 400px;margin-left: 4%;height: 28px"><br><br>
+                <abbr>E-mail Id</abbr><br><br>
+                <input id="field_5_4" type="text" style="width: 400px;height: 28px;"></p>
+           
+        
+    <p style="font-size: 14px;padding-top: 3%"> 
+    <strong style="background-color: rgb(139, 184, 241)">6. Previous Passport/ Application Details</strong><br><br>
+
+            <strong>6.1 Details of latest held/ existing/ lost/ damaged Ordinary Passport/ Identity Certificate</strong><br><br>
+            <abbr>Passport/ Identity Certificate Number</abbr><br><br>
+            <input id="field_6_1_1" maxlength="8" type="tel" placeholder="(8 digits)" style="width: 400px;height: 28px"><br><br>
+            <abbr>Date of Issue (DD-MM-YYYY)</abbr>
+            <abbr style="margin-left: 250px;">Date of Expiry (DD-MM-YYYY)</abbr><br><br>
+            <input id="field_6_1_2" type="date" style="width: 400px;height: 28px;">
+            <input id="field_6_1_3" type="date" style="width: 400px;margin-left: 4%;height: 28px"><br><br>
+            <abbr>Place of Issue</abbr><br><br>
+            <input id="field_6_1_4" type="text" style="width: 400px;height: 28px;"><br><br>
+            <abbr>If you have held/ hold any diplomatic/ official passport, provide details in Column 6 of Supplementary Form</abbr><br><br>
+            
+            <strong>6.2 Have you ever applied for passport, but not issued?</strong>
+                <input type="radio" name="answer" style="margin-left: 13.2%;" id="radio-52" onclick="check()">
+                <label>Yes</label>
+                <input type="radio" name="answer" style="margin-left: 3.5%;" id="radio-53" onclick="check()">
+                <label>No</label><br>
+                <abbr> (If yes, provide the following details)</abbr><br><br>
+                
+                <abbr>File Number</abbr>
+                <abbr style="margin-left: 360px;">Month and Year of applying</abbr><br><br>
+                <input id="field_6_2_1" type="text" style="width: 400px;height: 28px;">
+                <input id="field_6_2_2" type="month" style="width: 400px;height: 28px;margin-left: 4%;"><br><br>
+                <abbr>Name of passport office where applied</abbr><br><br>
+                <input id="field_6_2_3" type="text" style="width: 400px;height: 28px;"><br><br>
+
+    <strong style="background-color: rgb(139, 184, 241)">7. Other details</strong><br><br>
+                
+            <table>
+                    <tr>
+                        <td id="first_col" colspan="2"><strong>7.1 Provide the following details if there are any criminal proceedings pending against the applicant.</strong></td>
+                        <td>Yes</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td id="first_col" style="padding-bottom: 40px;">7.1.1</td>
+                        <td>Are any proceedings in respect of an offence alleged to have been committed by
+                            you pending before a criminal court in India?<br>
+                             If yes, fill Column 6.1 of Supplementary Form</td>
+                             <td><input type="radio" name="1" id="radio-54"></td>
+                             <td><input type="radio" name="1" id="radio-55"></td> 
+                    </tr>
+                    <tr>
+                        <td id="first_col" style="padding-bottom: 40px;">7.1.2</td>
+                        <td>Has any warrant or summons for your appearance been issued & pending before
+                            a court under any law for the time being in force?<br>
+                            If yes, fill Column 6.2 of Supplementary Form</td>
+                            <td><input type="radio" name="2" id="radio-56"></td>
+                            <td><input type="radio" name="2" id="radio-57"></td> 
+                    </tr>
+                    <tr>
+                        <td id="first_col" style="padding-bottom: 28px;">7.1.3</td>
+                        <td>Has a warrant for your arrest been issued by a court under any law for the time
+                            being in force?<br>
+                            If yes, fill Column 6.3 of Supplementary Form</td>
+                            <td><input type="radio" name="3" id="radio-58"></td>
+                            <td><input type="radio" name="3" id="radio-59"></td> 
+                    </tr>
+                    <tr>
+                        <td id="first_col" style="padding-bottom: 28px;">7.1.4</td>
+                        <td>Has an order prohibiting your departure from India been made by any court?<br>
+                            If yes, fill Column 6.4 of Supplementary Form</td>
+                            <td><input type="radio" name="4" id="radio-60"></td>
+                            <td><input type="radio" name="4" id="radio-61"></td> 
+                    </tr>
+                    <tr>
+                        <td id="first_col" colspan="4"><strong>7.2 Provide the following details if the applicant has been convicted by a court in India.</strong></td>
+                    </tr>
+                    <tr>
+                        <td id="first_col" style="padding-bottom: 59px;">7.2.1</td>
+                        <td>Have you, at any time during the period of five years immediately preceding the
+                        date of this application, been convicted by a court in India for any offence
+                        involving moral turpitude and sentenced in respect thereof to imprisonment for
+                        not less than two years?<br>
+                        If yes, fill Column 6.5 of Supplementary Form</td>
+                        <td><input type="radio" name="5" id="radio-62"></td>
+                        <td><input type="radio" name="5" id="radio-63"></td> 
+                    </tr>
+                    <tr>
+                        <td id="first_col" colspan="4"><strong>7.3 Provide the following details if the applicant has been refused/denied passport.</strong></td>
+                    </tr>
+                    <tr>
+                        <td id="first_col" style="padding-bottom: 28px;">7.3.1</td>
+                        <td>Have you ever been refused/denied passport? Yes No<br>
+                            If yes, fill Column 6.6 of Supplementary Form</td>
+                            <td><input type="radio" name="6" id="radio-64"></td>
+                            <td><input type="radio" name="6" id="radio-65"></td> 
+                    </tr>
+                    <tr>
+                        <td id="first_col" style="padding-bottom: 28px;">7.3.2</td>
+                        <td>Has your passport ever been impounded?<br>
+                            If yes, fill Column 6.7 of Supplementary Form</td>
+                            <td><input type="radio" name="7" id="radio-66"></td>
+                            <td><input type="radio" name="7" id="radio-67"></td> 
+                    </tr>
+                    <tr>
+                        <td id="first_col" style="padding-bottom: 28px;">7.3.3</td>
+                        <td>Has your passport ever been revoked?<br>
+                            If yes, fill Column 6.8 of Supplementary Form</td>
+                            <td><input type="radio" name="8" id="radio-68"></td>
+                            <td><input type="radio" name="8" id="radio-69"></td> 
+                    </tr>
+                    <tr>
+                        <td id="first_col" colspan="4"><strong>7.4 Provide the following details if applicant has applied for or been granted foreign citizenship.</strong></td>
+                    </tr>
+                    <tr>
+                        <td id="first_col" style="padding-bottom: 28px;">7.4.1</td>
+                        <td>Have you ever been granted citizenship by any other region/country?<br>
+                            If yes, fill Column 6.9 of Supplementary Form</td>
+                            <td><input type="radio" name="9"></td>
+                            <td><input type="radio" name="9"></td> 
+                    </tr>
+                    <tr>
+                        <td id="first_col" style="padding-bottom: 28px;">7.4.2</td>
+                        <td>Have you ever held the passport of any other region/country at any time?<br>
+                            If yes, fill Column 6.10 of Supplementary Form</td>
+                            <td><input type="radio" name="10"></td>
+                            <td><input type="radio" name="10"></td> 
+                    </tr>
+                    <tr>
+                        <td id="first_col" style="padding-bottom: 28px;">7.4.3</td>
+                        <td>Have you ever surrendered your Indian passport?<br>
+                            If yes, fill Column 6.11 of Supplementary Form</td>
+                            <td><input type="radio" name="11"></td>
+                            <td><input type="radio" name="11"></td> 
+                    </tr>
+                    <tr>
+                        <td id="first_col" style="padding-bottom: 28px;">7.4.4</td>
+                        <td>Have you ever applied for renunciation of Indian citizenship?<br>
+                            If yes, fill Column 6.12 of Supplementary Form</td>
+                            <td><input type="radio" name="12"></td>
+                            <td><input type="radio" name="12"></td> 
+                    </tr>
+                    <tr>
+                        <td  id="first_col" colspan="4"><strong>7.5 Provide the following details if applicant has returned to India on Emergency Certificate.</strong></td>
+                    </tr>
+                    <tr>
+                        <td id="first_col" style="padding-bottom: 28px;">7.5.1</td>
+                        <td>Have you ever returned to India on Emergency Certificate (EC)?<br>
+                            If yes, fill Column 6.13 of Supplementary Form</td>
+                            <td><input type="radio" name="13"></td>
+                            <td><input type="radio" name="13"></td> 
+                    </tr>
+                    <tr>
+                        <td id="first_col" style="padding-bottom: 12px;">7.5.2</td>
+                        <td>Have you ever been deported from any country?
+                        </td>
+                        <td><input type="radio" name="14"></td>
+                         <td><input type="radio" name="14"></td> 
+                    </tr>
+                    <tr>
+                        <td id="first_col"></td>
+                        <td>If yes, was the cost borne by the Government of India and if so, has the
+                            same been refunded?</td>
+                            <td><input type="radio" name="15"></td>
+                            <td><input type="radio" name="15"></td> 
+                    </tr>
+                    <tr>
+                        <td id="first_col" style="padding-bottom: 12px;">7.5.3</td>
+                        <td>Have you ever been repatriated from any country back to India?</td>
+                        <td><input type="radio" name="16"></td>
+                         <td><input type="radio" name="16"></td> 
+                    </tr>
+                    <tr>
+                        <td id="first_col"></td>
+                        <td>If yes, was the cost borne by the Government of India and if so, has the
+                            same been refunded?</td>
+                         <td><input type="radio" name="17"></td>
+                         <td><input type="radio" name="17"></td>  
+                    </tr>
+            
+            </table>
+                
+    </p>
+        
+    <p style="font-size: 14px;padding-top: 3%">
+    <strong style="background-color: rgb(139, 184, 241)">8. Fee Details (Not to be filled by applicants submitting the application at Passport Seva Kendra)</strong><br><br>
+            
+            <strong>8.1 Fee amount in (Rs)</strong><br><br>
+            <input id="field_8_1" type="text" style="width: 400px;height: 28px;"><br><br>
+
+            <strong>8.2 If paid by Demand Draft (DD), provide the following details</strong><br><br>
+            <abbr>DD Number</abbr><br><br>
+            <input id="field_8_2_1" type="text" style="width: 400px;height: 28px;"><br><br>
+            <abbr>DD Issue Date</abbr>
+            <abbr style="margin-left: 350px;">DD Expiry Date</abbr><br><br>
+            <input id="field_8_2_2" type="date" style="height: 28px;width: 400px;">
+            <input id="field_8_2_3" type="date" style="margin-left: 4%;height: 28px;width: 400px;"><br><br>
+            <abbr>Bank Name</abbr><br><br>
+            <input id="field_8_2_4" type="text" style="width: 400px;height: 28px;"><br><br>
+            <abbr>Branch</abbr><br><br>
+            <input id="field_8_2_5" type="text" style="width: 400px;height: 28px;"><br><br>
+
+    <strong style="background-color: rgb(139, 184, 241)">9. Enclosures</strong><br><br>
+
+            <abbr style="font-size: 12;">1. </abbr>
+            <input id="field_9_1" type="text" style="width: 400px;height: 28px;">
+            <abbr style="margin-left: 5px;font-size: 12;">6. </abbr>
+            <input id="field_9_6" type="text" style="width: 400px;height: 28px;"><br><br>
+            <abbr style="font-size: 12;">2. </abbr>
+            <input id="field_9_2" type="text" style="width: 400px;height: 28px;">
+            <abbr style="margin-left: 5px;font-size: 12;">7. </abbr>
+            <input id="field_9_7" type="text" style="width: 400px;height: 28px;"><br><br>
+            <abbr style="font-size: 12;">3. </abbr>
+            <input id="field_9_3" type="text" style="width: 400px;height: 28px;">
+            <abbr style="margin-left: 5px;font-size: 12;">8. </abbr>
+            <input id="field_9_8" type="text" style="width: 400px;height: 28px;"><br><br>
+            <abbr style="font-size: 12;">4. </abbr>
+            <input id="field_9_4" type="text" style="width: 400px;height: 28px;">
+            <abbr style="margin-left: 5px;font-size: 12;">9. </abbr>
+            <input id="field_9_9" type="text" style="width: 400px;height: 28px;"><br><br>
+            <abbr style="font-size: 12;">5.</abbr>
+            <input id="field_9_5" type="text" style="width: 400px;height: 28px;">
+            <abbr style="margin-left: 0px;font-size: 12;">10.</abbr>
+            <input id="field_9_10" type="text" style="width: 400px;height: 28px;"><br><br>
+
+    <strong style="background-color: rgb(139, 184, 241)">10. Self Declaration</strong><br><br>
+
+    <abbr>I owe allegiance to the sovereignty, unity & integrity of India, and have not voluntarily acquired citizenship or
+          travel document of any other country. I have not lost, surrendered or been deprived of the citizenship of India.
+          I have not contravened any of the conditions relating to the possession and use of an Indian passport.</abbr><br><br>
+
+    <abbr>I affirm that the information and particulars given by me in this form are true and correct. I further state that I
+          am not suppressing any material information in this regard. I further affirm that the enclosures and documentary
+          proof submitted in support of my application for an Indian passport are authentic and solely pertain to me and
+            I am fully responsible for the accuracy of the same. I am liable to be penalized or prosecuted if found otherwise.
+            I am aware that under the Passports Act, 1967 it is a criminal offence to furnish any false information or to
+            suppress any material information with a view to obtaining passport or travel document.</abbr><br><br>
+    <abbr>
+                I have read and understood the contents of the above and by submitting this form certify that all the information
+                submitted by me in the form is bonafide.</abbr><br><br>
+          
+    <abbr> Place</abbr> <abbr style="margin-left: 400px;">Date (DD-MM-YYYY)</abbr><br><br>
+    <input id="field_10_2" type="text" style="width: 400px;height: 28px;">
+    <input id="field_10_3" type="date" style="width: 400px;height: 28px;margin-left: 4%;"><br><br>
+
+    <abbr>Signature/ Left Hand Thumb Impression of Applicant (If applicant is minor, either parent to sign)</abbr><br><br>
+    <input id="field_10_1" type="file" accept=".jpg,.png,.jpeg"><br><br>
+                
+            
+    <span> <p> <a href='#a_field' id="file_field" style="font-size: 14;color: red;"></a> </p></span>
+    <span> <p> <a href='#box_1' id="photo_box" style="font-size: 14;color: red;"></a> </p></span>
+    <span> <p> <a href='#radio-2' id="1.1 radio" style="font-size: 14;color: red;"></a> </p></span>
+    <span> <p> <a href='#radio-3' id="1.2 radio" style="font-size: 14;color: red;"></a> </p></span>
+    <span> <p> <a href='#box_2' id="signature_box" style="font-size: 14;color: red;"></a> </p></span>
+    <span> <p> <a href="#check-1" id="1.3 checkbox--" style="font-size: 14;color: red;"></a></p></span>
+    <span> <p> <a href="#field_1_3" id="1.3_reason_box" style="font-size: 14;color: red;"></a> </p></span>
+    <span> <p> <a href='#radio-9' id="1.4 radio" style="font-size: 14;color: red;"></a> </p></span>
+    <span> <p> <a href='#radio-11' id="1.5 radio" style="font-size: 14;color: red;"></a> </p></span>
+    <span> <p> <a href='#radio-13' id="1.6 radio" style="font-size: 14;color: red;"></a> </p></span>
+    <span> <p> <a href="#field_2_1" id="2.1_name" style="font-size: 14;color: red;"></a> </p></span>
+    <span> <p> <a href="#field_2_1_1" id="2.1_surname" style="font-size: 14;color: red;"></a> </p></span>
+    <span> <p> <a href='#radio-15' id="2.2 radio" style="font-size: 14;color: red;"></a> </p></span>
+    <span> <p> <a href='#radio-17' id="2.3 radio" style="font-size: 14;color: red;"></a> </p></span>
+    <span> <p> <a href="#field_2_4" id="2.4_date" style="font-size: 14;color: red;"></a> </p></span>
+    <span> <p> <a href='#radio-india' id="2.5 radio" style="font-size: 14;color: red;"></a> </p></span>
+    <span> <p> <a href="#field_2_5" id="2.5_place" style="font-size: 14;color: red;"></a> </p></span>
+    <span> <p> <a href="#field_2_5_1" id="2.5_district" style="font-size: 14;color: red;"></a> </p></span>
+    <span> <p> <a href="#field_2_5_2" id="2.5_state" style="font-size: 14;color: red;"></a> </p></span>
+    <span> <p> <a href="#field_2_5_3" id="2.5_country" style="font-size: 14;color: red;"></a> </p> </span>
+    <span> <p> <a href="#field_2_5_1" id="2.5_same-name" style="font-size: 14;color: red;"></a> </p> </span>
+    <span> <p> <a href="#field_2_5_1" id="2.5_same-name--" style="font-size: 14;color: red;"></a> </p> </span>
+    <span> <p> <a href='#radio-19' id="2.6 radio" style="font-size: 14;color: red;"></a> </p> </span>
+    <span> <p> <a href='#radio-22' id="2.7 radio" style="font-size: 14;color: red;"></a> </p> </span>
+    <span> <p> <a href='#radio-27' id="2.8 radio" style="font-size: 14;color: red;"></a> </p> </span>
+    <span> <p> <a href="#field_2_9" id="pan-card" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_2_10" id="voter-id" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href='#radio-30' id="2.11 radio" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_2_12" id="2.12_organization" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href='#radio-42' id="2.13 radio" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href='#radio-44' id="2.14 radio" style="font-size: 14;color: red;"></a> </p> </span>
+    <span> <p> <a href='#radio-48' id="2.15 radio" style="font-size: 14;color: red;"></a> </p> </span>
+    <span> <p> <a href='#field_2_16' id="2.16_visible_mark" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_2_17" id="aadharcard-no" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_3_1" id="3.1_father" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_3_1_1" id="3.1_surname" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_3_2" id="3.2_mother" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_3_2_1" id="3.2_surname" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_3_3" id="3.3_Guardian" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_3_3_1" id="3.3_surname" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_3_4" id="3.4_spouse" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_3_4_1" id="3.4_surname" style="font-size: 14;color: red;"></a> </p> </span>
+    <span> <p> <a href='#radio-fileno' id="3.5 radio" style="font-size: 14;color: red;"></a> </p> </span>
+    <span> <p> <a href="#field_3_5_1" id="3.5_father_file" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_3_5_3" id="3.5_mother_file" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_3_5_1" id="3.5_father_pass" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_3_5_3" id="3.5_mother_pass" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_4_1_1" id="4.1_house" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href='#field_4_1_2' id="4.1_village" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_4_1_3" id="4.1_district" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_4_1_4" id="4.1_police_station" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_4_1_5" id="4.1_state" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_4_1_6" id="4.1_pin" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_4_1_7" id="4.1_mobile" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_4_1_8" id="4.1_telephone" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_4_1_9" id="4.1_email" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href='#radio-50' id="4.2 radio" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_5_1" id="5.1_name_address" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_5_2" id="5.2_mobile" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_5_3" id="5.3_telephone" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_5_4" id="5.4_email" style="font-size: 14;color: red;"></a> </p> </span>
+    <span> <p> <a href="#field_6_1_1" id="6.1_passport" style="font-size: 14;color: red;"></a> </p> </span>
+    <span> <p> <a href='#field_6_1_2' id="6.1_issue-date" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href='#field_6_1_3' id="6.1_expiry-date" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_6_1_4" id="6.1_place" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href='#radio-52' id="6.2 radio" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_6_2_1" id="6.2_file-no" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_6_2_2" id="6.2_month" style="font-size: 14;color: red;"></a> </p> </span>
+    <span> <p> <a href="#field_6_2_3" id="6.2_name" style="font-size: 14;color: red;"></a> </p> </span>  
+    <span> <p> <a href='#radio-54' id="7.1.1 radio" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href='#radio-56' id="7.1.2 radio" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href='#radio-58' id="7.1.3 radio" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href='#radio-60' id="7.1.4 radio" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href='#radio-62' id="7.2.1 radio" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href='#radio-64' id="7.3.1 radio" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href='#radio-66' id="7.3.2 radio" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href='#radio-68' id="7.3.3 radio" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_8_1" id="8.1_fee" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_8_2_1" id="DD_number" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href='#field_8_2_2' id="DD_issue-date" style="font-size: 14;color: red;"></a> </p> </span>
+    <span> <p> <a href="#field_8_2_3" id="DD_expiry-date" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_8_2_4" id="8.2_bank" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_8_2_5" id="8.2_branch" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_10_1" id="10_place" style="font-size: 14;color: red;"></a> </p> </span> 
+    <span> <p> <a href="#field_10_2" id="10_sign" style="font-size: 14;color: red;"></a> </p> </span>
+    <span> <p> <a href="#field_10_3" id="10_date" style="font-size: 14;color: red;"></a> </p> </span>
+
+    <input type="reset" style="margin-top: 2%;margin-left: 30%;height:35px;background-color: lightseagreen;text-decoration-color: black;" value="Reset" onsubmit="validation();">
+    <input type="submit" style="margin-top: 2%;margin-left: 20%;height:35px;background-color: lightseagreen;text-decoration-color: black;" value="Register" onsubmit="validation();"><br><br><br>
+
+    </p>
+
+    </div>
+    </form>
+    </body>
+</html>
